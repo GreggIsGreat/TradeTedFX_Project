@@ -1,0 +1,125 @@
+# Trading Script Manual
+
+## Overview
+This document outlines the goals, requirements, and functionality of the Python trading script designed for market analysis and price prediction.
+
+## Goals
+
+1. **Historical Data Collection** 
+   - Capture candlestick information for configurable time periods (default: 60 days) ✅
+   - Store OHLCV (Open, High, Low, Close, Volume) data efficiently ✅
+   - Support multiple timeframes (1m, 5m, 15m, 1h, 1d) ✅
+
+3. **Trading Session Management** 
+   - Maintain active trading sessions with proper state management 
+   - Implement session logging and monitoring
+
+4. **News Integration**
+   - Fetch relevant financial news from multiple sources
+   - Perform sentiment analysis on news articles
+   - Correlate news events with price movements
+   - Filter news by relevance and impact level
+
+5. **Risk Management**
+   - Implement position sizing algorithms
+   - Set stop-loss and take-profit levels
+   - Monitor portfolio exposure and diversification
+   - Calculate risk-reward ratios for trades
+
+6. **Real-time Monitoring**
+   - Stream live market data
+   - Generate alerts for trading opportunities
+   - Monitor system performance and latency
+   - Provide dashboard interface for oversight
+
+2. **Price Prediction System**
+   - Implement machine learning models for closing price prediction
+   - Use technical indicators as feature inputs
+   - Apply best practices for time series forecasting
+   - Include confidence intervals and prediction accuracy metrics
+
+## Requirements
+
+### Technical Requirements
+- Python 3.8+
+- Required libraries: pandas, numpy, scikit-learn, yfinance, requests, websocket-client
+- Database: SQLite or PostgreSQL for data storage
+- API access: Trading platform API keys, news API credentials
+- Hardware: Minimum 8GB RAM, stable internet connection
+
+### Functional Requirements
+- Data persistence and backup capabilities
+- Error handling and logging system
+- Configuration management (config files)
+- Backtesting functionality
+- Performance metrics and reporting
+- Multi-symbol support
+
+### Security Requirements
+- Secure API key storage (environment variables)
+- Encrypted database connections
+- Input validation and sanitization
+- Rate limiting for API calls
+
+## Architecture Overview
+```
+Data Sources → Data Collection → Feature Engineering → ML Models → Trading Logic → Execution
+     ↓              ↓                   ↓               ↓            ↓           ↓
+  News APIs    Candlestick Data    Technical Indicators  Predictions  Signals   Orders
+  Market APIs      Storage             Sentiment           Risk        Alerts    Logging
+```
+
+## Key Features
+
+### Data Management
+- Automated data collection and updates
+- Data quality checks and cleaning
+- Historical data gaps detection and filling
+- Multiple data source integration
+
+### Analysis Engine
+- Technical analysis indicators (RSI, MACD, Bollinger Bands, etc.)
+- Fundamental analysis integration
+- Pattern recognition algorithms
+- Market regime detection
+
+### Execution System
+- Order management system
+- Portfolio tracking
+- Performance analytics
+- Trade journal functionality
+
+## Configuration
+
+The script will support configuration through:
+- Configuration files (JSON/YAML)
+- Command-line arguments
+- Environment variables
+- Runtime parameter adjustment
+
+## Monitoring and Maintenance
+
+### Logging
+- Comprehensive logging at multiple levels (DEBUG, INFO, WARNING, ERROR)
+- Structured logging for easier analysis
+- Log rotation and archival
+
+### Health Checks
+- System health monitoring
+- API connectivity checks
+- Data quality validation
+- Performance metrics tracking
+
+### Alerts
+- Email/SMS notifications for critical events
+- Trading opportunity alerts
+- System error notifications
+- Performance threshold breaches
+
+## Future Enhancements
+- Advanced ML models (LSTM, Transformer)
+- Multi-timeframe analysis integration
+- Enhanced news sentiment weighting
+- Correlation analysis between currency pairs
+- Market volatility prediction
+- Economic calendar integration

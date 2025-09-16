@@ -1,0 +1,40 @@
+2025-09-16 11:16:29,125 - __main__ - INFO - Database setup for trading sessions completed successfully
+2025-09-16 11:16:29,128 - __main__ - INFO - Started paper trading session ID: 1
+2025-09-16 11:16:30,306 - __main__ - INFO - Latest price: 3731.800048828125
+2025-09-16 11:16:30,309 - __main__ - INFO - Placed buy trade for 1.0 at 3731.800048828125
+2025-09-16 11:16:35,554 - __main__ - INFO - Latest price: 115659.609375
+2025-09-16 11:16:35,558 - __main__ - INFO - Placed sell trade for 0.1 at 115659.609375
+2025-09-16 11:16:40,657 - __main__ - INFO - Latest price: 3731.800048828125
+2025-09-16 11:16:40,921 - __main__ - INFO - Latest price: 24295.33203125
+2025-09-16 11:16:40,964 - __main__ - INFO - Latest price: 115659.609375
+2025-09-16 11:16:47,211 - __main__ - INFO - Latest price: 3732.10009765625
+2025-09-16 11:16:47,265 - __main__ - INFO - Latest price: 24295.33203125
+2025-09-16 11:16:47,605 - __main__ - INFO - Latest price: 115637.21875
+2025-09-16 11:16:53,652 - __main__ - INFO - Latest price: 3732.10009765625
+2025-09-16 11:16:53,911 - __main__ - INFO - Latest price: 24295.33203125
+2025-09-16 11:16:53,951 - __main__ - INFO - Latest price: 115637.21875
+2025-09-16 11:17:00,196 - __main__ - INFO - Latest price: 3732.300048828125
+2025-09-16 11:17:00,200 - __main__ - INFO - Closed trade with PnL: 0.5
+2025-09-16 11:17:00,452 - __main__ - INFO - Latest price: 115637.21875
+2025-09-16 11:17:00,456 - __main__ - INFO - Closed trade with PnL: 2.2390625
+2025-09-16 11:17:00,458 - __main__ - INFO - Stopped trading session ID: 1
+2025-09-16 11:30:32,766 - __main__ - INFO - Database setup for trading sessions completed successfully
+2025-09-16 11:30:32,769 - __main__ - INFO - Started paper trading session ID: 2
+2025-09-16 11:30:33,480 - __main__ - INFO - Latest price: 3732.699951171875
+2025-09-16 11:30:33,484 - __main__ - INFO - Placed buy trade for 1.0 at 3732.699951171875
+2025-09-16 11:30:38,717 - __main__ - INFO - Latest price: 115642.015625
+2025-09-16 11:30:38,721 - __main__ - INFO - Placed sell trade for 0.1 at 115642.015625
+2025-09-16 11:30:43,972 - __main__ - INFO - Latest price: 3732.60009765625
+2025-09-16 11:30:44,230 - __main__ - INFO - Latest price: 24295.33203125
+2025-09-16 11:30:44,272 - __main__ - INFO - Latest price: 115642.015625
+2025-09-16 11:30:50,328 - __main__ - INFO - Latest price: 3732.60009765625
+2025-09-16 11:30:50,370 - __main__ - INFO - Latest price: 24295.33203125
+2025-09-16 11:30:50,612 - __main__ - INFO - Latest price: 115629.8203125
+2025-09-16 11:30:56,866 - __main__ - INFO - Latest price: 3733.300048828125
+2025-09-16 11:30:57,108 - __main__ - INFO - Latest price: 24295.33203125
+2025-09-16 11:30:57,146 - __main__ - INFO - Latest price: 115629.8203125
+2025-09-16 11:31:03,199 - __main__ - INFO - Latest price: 3733.300048828125
+2025-09-16 11:31:03,208 - __main__ - INFO - Closed trade with PnL: 0.60009765625
+2025-09-16 11:31:03,668 - __main__ - INFO - Latest price: 115629.8203125
+2025-09-16 11:31:03,671 - __main__ - INFO - Closed trade with PnL: 1.2195312500000002
+2025-09-16 11:31:03,673 - __main__ - INFO - Stopped trading session ID: 2

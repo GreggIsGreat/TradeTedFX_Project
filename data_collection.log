@@ -1,0 +1,105 @@
+2025-09-15 16:15:09,063 - __main__ - INFO - Database setup completed successfully
+2025-09-15 16:15:09,063 - __main__ - INFO - Starting daily data collection
+2025-09-15 16:15:09,063 - __main__ - INFO - Starting collection for 3 symbols
+2025-09-15 16:15:09,064 - __main__ - INFO - Fetching GC=F data - Attempt 1
+2025-09-15 16:15:12,028 - __main__ - INFO - Stored 1131 records for GC=F 1h
+2025-09-15 16:15:12,029 - __main__ - INFO - Successfully collected 1131 records for GC=F
+2025-09-15 16:15:13,034 - __main__ - INFO - Fetching GC=F data - Attempt 1
+2025-09-15 16:15:13,334 - __main__ - INFO - Stored 50 records for GC=F 1d
+2025-09-15 16:15:13,334 - __main__ - INFO - Successfully collected 50 records for GC=F
+2025-09-15 16:15:14,339 - __main__ - INFO - Fetching ^NDX data - Attempt 1
+2025-09-15 16:15:14,917 - __main__ - INFO - Stored 410 records for ^NDX 1h
+2025-09-15 16:15:14,917 - __main__ - INFO - Successfully collected 410 records for ^NDX
+2025-09-15 16:15:15,921 - __main__ - INFO - Fetching ^NDX data - Attempt 1
+2025-09-15 16:15:16,184 - __main__ - INFO - Stored 60 records for ^NDX 1d
+2025-09-15 16:15:16,184 - __main__ - INFO - Successfully collected 60 records for ^NDX
+2025-09-15 16:15:17,189 - __main__ - INFO - Fetching BTC-USD data - Attempt 1
+2025-09-15 16:15:18,022 - __main__ - INFO - Stored 1431 records for BTC-USD 1h
+2025-09-15 16:15:18,022 - __main__ - INFO - Successfully collected 1431 records for BTC-USD
+2025-09-15 16:15:19,027 - __main__ - INFO - Fetching BTC-USD data - Attempt 1
+2025-09-15 16:15:19,350 - __main__ - INFO - Stored 60 records for BTC-USD 1d
+2025-09-15 16:15:19,350 - __main__ - INFO - Successfully collected 60 records for BTC-USD
+2025-09-15 16:15:20,353 - __main__ - INFO - Collection completed: 6/6 successful
+2025-09-15 16:15:20,364 - __main__ - INFO - Daily collection completed: 6/6 successful
+2025-09-16 08:19:48,598 - __main__ - INFO - Database setup completed successfully
+2025-09-16 08:19:48,598 - __main__ - INFO - Starting daily data collection
+2025-09-16 08:19:48,598 - __main__ - INFO - Starting collection for 3 symbols
+2025-09-16 08:19:48,598 - __main__ - INFO - Fetching GC=F data - Attempt 1
+2025-09-16 08:19:49,693 - __main__ - INFO - Stored 1123 records for GC=F 1h
+2025-09-16 08:19:49,693 - __main__ - INFO - Successfully collected 1123 records for GC=F
+2025-09-16 08:19:50,698 - __main__ - INFO - Fetching GC=F data - Attempt 1
+2025-09-16 08:19:50,948 - __main__ - INFO - Stored 50 records for GC=F 1d
+2025-09-16 08:19:50,948 - __main__ - INFO - Successfully collected 50 records for GC=F
+2025-09-16 08:19:51,952 - __main__ - INFO - Fetching ^NDX data - Attempt 1
+2025-09-16 08:19:52,395 - __main__ - INFO - Stored 416 records for ^NDX 1h
+2025-09-16 08:19:52,395 - __main__ - INFO - Successfully collected 416 records for ^NDX
+2025-09-16 08:19:53,400 - __main__ - INFO - Fetching ^NDX data - Attempt 1
+2025-09-16 08:19:53,645 - __main__ - INFO - Stored 60 records for ^NDX 1d
+2025-09-16 08:19:53,645 - __main__ - INFO - Successfully collected 60 records for ^NDX
+2025-09-16 08:19:54,650 - __main__ - INFO - Fetching BTC-USD data - Attempt 1
+2025-09-16 08:19:55,212 - __main__ - INFO - Stored 1423 records for BTC-USD 1h
+2025-09-16 08:19:55,212 - __main__ - INFO - Successfully collected 1423 records for BTC-USD
+2025-09-16 08:19:56,217 - __main__ - INFO - Fetching BTC-USD data - Attempt 1
+2025-09-16 08:19:56,458 - __main__ - INFO - Stored 59 records for BTC-USD 1d
+2025-09-16 08:19:56,458 - __main__ - INFO - Successfully collected 59 records for BTC-USD
+2025-09-16 08:19:57,462 - __main__ - INFO - Collection completed: 6/6 successful
+2025-09-16 08:19:57,476 - __main__ - INFO - Daily collection completed: 6/6 successful
+2025-09-16 08:19:58,783 - __main__ - INFO - Database setup completed successfully
+2025-09-16 08:19:58,783 - __main__ - INFO - Starting daily data collection
+2025-09-16 08:19:58,783 - __main__ - INFO - Starting collection for 3 symbols
+2025-09-16 08:19:58,783 - __main__ - INFO - Fetching GC=F data - Attempt 1
+2025-09-16 08:19:59,455 - __main__ - INFO - Stored 1123 records for GC=F 1h
+2025-09-16 08:19:59,455 - __main__ - INFO - Successfully collected 1123 records for GC=F
+2025-09-16 08:20:00,460 - __main__ - INFO - Fetching GC=F data - Attempt 1
+2025-09-16 08:20:00,503 - __main__ - INFO - Stored 50 records for GC=F 1d
+2025-09-16 08:20:00,503 - __main__ - INFO - Successfully collected 50 records for GC=F
+2025-09-16 08:20:01,508 - __main__ - INFO - Fetching ^NDX data - Attempt 1
+2025-09-16 08:20:01,582 - __main__ - INFO - Stored 416 records for ^NDX 1h
+2025-09-16 08:20:01,582 - __main__ - INFO - Successfully collected 416 records for ^NDX
+2025-09-16 08:20:02,586 - __main__ - INFO - Fetching ^NDX data - Attempt 1
+2025-09-16 08:20:02,630 - __main__ - INFO - Stored 60 records for ^NDX 1d
+2025-09-16 08:20:02,630 - __main__ - INFO - Successfully collected 60 records for ^NDX
+2025-09-16 08:20:03,651 - __main__ - INFO - Fetching BTC-USD data - Attempt 1
+2025-09-16 08:20:04,144 - __main__ - INFO - Stored 1423 records for BTC-USD 1h
+2025-09-16 08:20:04,144 - __main__ - INFO - Successfully collected 1423 records for BTC-USD
+2025-09-16 08:20:05,149 - __main__ - INFO - Fetching BTC-USD data - Attempt 1
+2025-09-16 08:20:05,188 - __main__ - INFO - Stored 59 records for BTC-USD 1d
+2025-09-16 08:20:05,188 - __main__ - INFO - Successfully collected 59 records for BTC-USD
+2025-09-16 08:20:06,193 - __main__ - INFO - Collection completed: 6/6 successful
+2025-09-16 08:20:06,203 - __main__ - INFO - Daily collection completed: 6/6 successful
+2025-09-16 12:32:33,588 - __main__ - INFO - Database setup completed successfully
+2025-09-16 12:32:33,620 - __main__ - INFO - Starting daily data collection
+2025-09-16 12:32:33,621 - __main__ - INFO - Starting collection for 3 symbols
+2025-09-16 12:32:33,621 - __main__ - INFO - Fetching GC=F data - Attempt 1
+2025-09-16 12:32:34,590 - __main__ - INFO - Stored 1127 records for GC=F 1h
+2025-09-16 12:32:34,590 - __main__ - INFO - Successfully collected 1127 records for GC=F
+2025-09-16 12:32:35,594 - __main__ - INFO - Fetching GC=F data - Attempt 1
+2025-09-16 12:32:35,860 - __main__ - INFO - Stored 50 records for GC=F 1d
+2025-09-16 12:32:35,860 - __main__ - INFO - Successfully collected 50 records for GC=F
+2025-09-16 12:32:36,865 - __main__ - INFO - Fetching ^NDX data - Attempt 1
+2025-09-16 12:32:37,164 - __main__ - INFO - Stored 416 records for ^NDX 1h
+2025-09-16 12:32:37,164 - __main__ - INFO - Successfully collected 416 records for ^NDX
+2025-09-16 12:32:38,169 - __main__ - INFO - Fetching ^NDX data - Attempt 1
+2025-09-16 12:32:38,399 - __main__ - INFO - Stored 60 records for ^NDX 1d
+2025-09-16 12:32:38,399 - __main__ - INFO - Successfully collected 60 records for ^NDX
+2025-09-16 12:32:39,404 - __main__ - INFO - Fetching BTC-USD data - Attempt 1
+2025-09-16 12:32:39,942 - __main__ - INFO - Stored 1427 records for BTC-USD 1h
+2025-09-16 12:32:39,942 - __main__ - INFO - Successfully collected 1427 records for BTC-USD
+2025-09-16 12:32:40,947 - __main__ - INFO - Fetching BTC-USD data - Attempt 1
+2025-09-16 12:32:41,188 - __main__ - INFO - Stored 60 records for BTC-USD 1d
+2025-09-16 12:32:41,188 - __main__ - INFO - Successfully collected 60 records for BTC-USD
+2025-09-16 12:32:42,193 - __main__ - INFO - Collection completed: 6/6 successful
+2025-09-16 12:32:42,206 - __main__ - INFO - Daily collection completed: 6/6 successful
+2025-09-16 12:32:42,238 - __main__ - INFO - Starting volume monitoring for 2 minutes
+2025-09-16 12:32:42,238 - __main__ - INFO - Fetching GC=F data - Attempt 1
+2025-09-16 12:32:43,319 - yfinance - ERROR - $GC=F: possibly delisted; no price data found  (period=1d) (Yahoo error = "Invalid input - interval=10m is not supported. Valid intervals: [1m, 2m, 5m, 15m, 30m, 60m, 90m, 1h, 4h, 1d, 5d, 1wk, 1mo, 3mo]")
+2025-09-16 12:32:43,319 - __main__ - WARNING - No data received for GC=F
+2025-09-16 12:32:43,320 - __main__ - INFO - GOLD market opened, initial volume: 0
+2025-09-16 12:32:43,320 - __main__ - INFO - Fetching BTC-USD data - Attempt 1
+2025-09-16 12:32:44,032 - yfinance - ERROR - $BTC-USD: possibly delisted; no price data found  (period=1d) (Yahoo error = "Invalid input - interval=10m is not supported. Valid intervals: [1m, 2m, 5m, 15m, 30m, 60m, 90m, 1h, 4h, 1d, 5d, 1wk, 1mo, 3mo]")
+2025-09-16 12:32:44,032 - __main__ - WARNING - No data received for BTC-USD
+2025-09-16 12:32:44,035 - __main__ - INFO - BTCUSD market opened, initial volume: 0
+2025-09-16 12:32:44,035 - __main__ - INFO - Fetching ^NDX data - Attempt 1
+2025-09-16 12:32:44,803 - yfinance - ERROR - $^NDX: possibly delisted; no price data found  (period=1d) (Yahoo error = "Invalid input - interval=10m is not supported. Valid intervals: [1m, 2m, 5m, 15m, 30m, 60m, 90m, 1h, 4h, 1d, 5d, 1wk, 1mo, 3mo]")
+2025-09-16 12:32:44,804 - __main__ - WARNING - No data received for ^NDX
+2025-09-16 12:32:44,805 - __main__ - INFO - NAS100 market opened, initial volume: 0
