@@ -1,0 +1,584 @@
+import sqlite3
+import logging
+from datetime import datetime, timedelta
+import pandas as pd
+import pytz
+import investpy
+from textblob import TextBlob
+import yfinance as yf
+from typing import List, Dict
+import requests
+from bs4 import BeautifulSoup
+import nltk
+from nltk.tokenize import sent_tokenize
+
+class NewsIntegrator:
+    """
+    Integrates financial news and economic events for trading analysis
+    """
+    
+    def __init__(self, db_path: str = "trading_data.db", log_level: str = "INFO"):
+        self.db_path = db_path
+        self.setup_logging(log_level)
+        self.setup_database()
+        
+        # Configuration
+        self.config = {
+            'countries': ['united states'],
+            'time_zone': 'GMT +2:00',  # CAT (UTC+2)
+            'importances': ['high', 'medium'],  # Filter by impact level
+            'time_filter': 'time_only',
+            'symbols': {
+                'GOLD': 'GC=F',
+                'NAS100': '^NDX',
+                'BTCUSD': 'BTC-USD'
+            },
+            'discussion_urls': {
+                'GOLD': 'https://www.investing.com/commodities/gold-commentary',
+                'NAS100': 'https://www.investing.com/indices/nq-100-futures-commentary'
+            }
+        }
+        
+        # Timezone for CAT
+        self.cat_tz = pytz.timezone('Africa/Gaborone')
+    
+    def setup_logging(self, log_level: str):
+        """Setup logging configuration"""
+        logging.basicConfig(
+            level=getattr(logging, log_level.upper()),
+            format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+            handlers=[
+                logging.FileHandler('news_integration.log'),
+                logging.StreamHandler()
+            ]
+        )
+        self.logger = logging.getLogger(__name__)
+    
+    def setup_database(self):
+        """Initialize database tables for news and events"""
+        try:
+            with sqlite3.connect(self.db_path) as conn:
+                cursor = conn.cursor()
+                
+                # Create economic events table
+                cursor.execute('''
+                    CREATE TABLE IF NOT EXISTS economic_events (
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        event_date TEXT NOT NULL,
+                        event_time TEXT NOT NULL,
+                        currency TEXT NOT NULL,
+                        importance TEXT NOT NULL,
+                        event_name TEXT NOT NULL,
+                        actual TEXT,
+                        forecast TEXT,
+                        previous TEXT,
+                        fetched_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                        UNIQUE(event_date, event_time, event_name)
+                    )
+                ''')
+                
+                # Create news articles table
+                cursor.execute('''
+                    CREATE TABLE IF NOT EXISTS news_articles (
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        symbol TEXT NOT NULL,
+                        title TEXT NOT NULL,
+                        link TEXT NOT NULL,
+                        publisher TEXT,
+                        published_at TEXT,
+                        sentiment_score REAL,
+                        sentiment_label TEXT,
+                        fetched_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                        UNIQUE(symbol, title, published_at)
+                    )
+                ''')
+                
+                # Create discussions comments table
+                cursor.execute('''
+                    CREATE TABLE IF NOT EXISTS discussion_comments (
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        market TEXT NOT NULL,
+                        comment_text TEXT NOT NULL,
+                        sentiment_score REAL,
+                        sentiment_label TEXT,
+                        fetched_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                        UNIQUE(market, comment_text)
+                    )
+                ''')
+                
+                # Create market analysis summary table
+                cursor.execute('''
+                    CREATE TABLE IF NOT EXISTS market_analysis (
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        market TEXT NOT NULL,
+                        analysis_date TEXT NOT NULL,
+                        summary TEXT,
+                        buy_count INTEGER DEFAULT 0,
+                        sell_count INTEGER DEFAULT 0,
+                        total_comments INTEGER DEFAULT 0,
+                        recommendation TEXT,
+                        overall_sentiment REAL DEFAULT 0.0,
+                        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                        UNIQUE(market, analysis_date)
+                    )
+                ''')
+                
+                # Indexes
+                cursor.execute('CREATE INDEX IF NOT EXISTS idx_event_date ON economic_events(event_date)')
+                cursor.execute('CREATE INDEX IF NOT EXISTS idx_news_symbol ON news_articles(symbol)')
+                cursor.execute('CREATE INDEX IF NOT EXISTS idx_comment_market ON discussion_comments(market)')
+                cursor.execute('CREATE INDEX IF NOT EXISTS idx_analysis_market ON market_analysis(market)')
+                
+                conn.commit()
+                self.logger.info("Database setup completed successfully")
+                
+        except Exception as e:
+            self.logger.error(f"Database setup failed: {e}")
+            raise
+    
+    def fetch_economic_calendar(self, from_date: str = None, to_date: str = None) -> pd.DataFrame:
+        """
+        Fetch economic calendar events from Investing.com
+        """
+        try:
+            if from_date is None:
+                from_date = (datetime.now(self.cat_tz) - timedelta(days=7)).strftime('%d/%m/%Y')
+            if to_date is None:
+                to_date = datetime.now(self.cat_tz).strftime('%d/%m/%Y')
+            
+            self.logger.info(f"Fetching economic calendar from {from_date} to {to_date}")
+            
+            df = investpy.economic_calendar(
+                time_zone=self.config['time_zone'],
+                time_filter=self.config['time_filter'],
+                countries=self.config['countries'],
+                importances=self.config['importances'],
+                from_date=from_date,
+                to_date=to_date
+            )
+            
+            self.logger.info(f"Fetched {len(df)} economic events")
+            return df
+            
+        except Exception as e:
+            self.logger.error(f"Failed to fetch economic calendar: {e}")
+            return pd.DataFrame()
+    
+    def store_economic_events(self, df: pd.DataFrame):
+        """Store economic events in database"""
+        try:
+            with sqlite3.connect(self.db_path) as conn:
+                records_stored = 0
+                for _, row in df.iterrows():
+                    try:
+                        event_date = row['date']
+                        event_time = row['time']
+                        currency = row['currency']
+                        importance = row['importance']
+                        event_name = row['event']
+                        actual = str(row.get('actual', '')) if pd.notna(row.get('actual')) else ''
+                        forecast = str(row.get('forecast', '')) if pd.notna(row.get('forecast')) else ''
+                        previous = str(row.get('previous', '')) if pd.notna(row.get('previous')) else ''
+                        
+                        conn.execute('''
+                            INSERT OR IGNORE INTO economic_events 
+                            (event_date, event_time, currency, importance, event_name, actual, forecast, previous)
+                            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                        ''', (event_date, event_time, currency, importance, event_name, actual, forecast, previous))
+                        
+                        records_stored += 1
+                        
+                    except Exception as e:
+                        self.logger.error(f"Error storing event: {e}")
+                        continue
+                
+                conn.commit()
+                self.logger.info(f"Stored {records_stored} economic events")
+                
+        except Exception as e:
+            self.logger.error(f"Database storage failed: {e}")
+    
+    def fetch_news_articles(self, symbol: str, limit: int = 20) -> List[Dict]:
+        """
+        Fetch news articles for a symbol using yfinance
+        """
+        try:
+            ticker = yf.Ticker(symbol)
+            news = ticker.news
+            
+            if not news:
+                self.logger.warning(f"No news found for {symbol}")
+                return []
+            
+            articles = []
+            for item in news[:limit]:
+                title = item.get('title', '').strip()
+                link = item.get('link', '').strip()
+                
+                # Skip empty titles or links
+                if not title or not link:
+                    continue
+                
+                published_at = item.get('providerPublishTime')
+                if published_at and published_at > 0:
+                    published_datetime = datetime.fromtimestamp(published_at).strftime('%Y-%m-%d %H:%M:%S')
+                else:
+                    published_datetime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                
+                article = {
+                    'title': title,
+                    'link': link,
+                    'publisher': item.get('publisher', ''),
+                    'published_at': published_datetime
+                }
+                articles.append(article)
+            
+            self.logger.info(f"Fetched {len(articles)} valid news articles for {symbol}")
+            return articles
+            
+        except Exception as e:
+            self.logger.error(f"Failed to fetch news for {symbol}: {e}")
+            return []
+    
+    def perform_sentiment_analysis(self, text: str) -> Dict:
+        """
+        Perform sentiment analysis using TextBlob
+        """
+        try:
+            if not text or not text.strip():
+                return {'score': 0.0, 'label': 'neutral'}
+                
+            blob = TextBlob(text)
+            polarity = blob.sentiment.polarity
+            
+            if polarity > 0.05:
+                label = 'positive'
+            elif polarity < -0.05:
+                label = 'negative'
+            else:
+                label = 'neutral'
+            
+            return {
+                'score': round(polarity, 4),
+                'label': label
+            }
+            
+        except Exception as e:
+            self.logger.error(f"Sentiment analysis failed: {e}")
+            return {'score': 0.0, 'label': 'neutral'}
+    
+    def store_news_articles(self, symbol: str, articles: List[Dict]):
+        """Store news articles with sentiment in database"""
+        try:
+            with sqlite3.connect(self.db_path) as conn:
+                records_stored = 0
+                for article in articles:
+                    try:
+                        sentiment = self.perform_sentiment_analysis(article['title'])
+                        
+                        conn.execute('''
+                            INSERT OR IGNORE INTO news_articles 
+                            (symbol, title, link, publisher, published_at, sentiment_score, sentiment_label)
+                            VALUES (?, ?, ?, ?, ?, ?, ?)
+                        ''', (symbol, article['title'], article['link'], article.get('publisher', ''), 
+                             article['published_at'], sentiment['score'], sentiment['label']))
+                        
+                        records_stored += 1
+                        
+                    except Exception as e:
+                        self.logger.error(f"Error storing article: {e}")
+                        continue
+                
+                conn.commit()
+                self.logger.info(f"Stored {records_stored} news articles for {symbol}")
+                
+        except Exception as e:
+            self.logger.error(f"Database storage failed: {e}")
+    
+    def fetch_discussion_comments(self, market: str, limit: int = 100) -> List[str]:
+        """
+        Fetch user comments from Investing.com discussions page
+        """
+        url = self.config['discussion_urls'].get(market)
+        if not url:
+            self.logger.warning(f"No discussion URL configured for {market}")
+            return []
+        
+        try:
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            }
+            response = requests.get(url, headers=headers, timeout=30)
+            if response.status_code != 200:
+                self.logger.error(f"Failed to fetch {url}: Status {response.status_code}")
+                return []
+            
+            soup = BeautifulSoup(response.text, 'html.parser')
+            comments = []
+            
+            # Try multiple selectors for comments
+            selectors = [
+                'div.break-words.leading-5',
+                '.comment-text',
+                '.comment-content',
+                '[class*="comment"]',
+                'div[class*="break-words"]'
+            ]
+            
+            for selector in selectors:
+                comment_divs = soup.select(selector)
+                if comment_divs:
+                    for div in comment_divs:
+                        comment_text = div.get_text().strip()
+                        if comment_text and len(comment_text) > 10:  # Filter very short comments
+                            comments.append(comment_text)
+                        if len(comments) >= limit:
+                            break
+                    break
+            
+            self.logger.info(f"Fetched {len(comments)} comments for {market}")
+            return comments[:limit]
+            
+        except Exception as e:
+            self.logger.error(f"Failed to fetch comments for {market}: {e}")
+            return []
+    
+    def summarize_comments(self, comments: List[str], max_sentences: int = 3) -> str:
+        """
+        Summarize comments using simple extractive summary
+        """
+        try:
+            if not comments:
+                return "No comments available for summary."
+            
+            # Combine all comments
+            all_text = ' '.join(comments[:20])  # Use first 20 comments for summary
+            
+            # Tokenize into sentences
+            sentences = sent_tokenize(all_text)
+            
+            # Return first few sentences or all if less
+            summary_sentences = sentences[:max_sentences]
+            summary = ' '.join(summary_sentences)
+            
+            return summary if summary else "Unable to generate summary."
+            
+        except Exception as e:
+            self.logger.error(f"Failed to summarize comments: {e}")
+            return "Error generating summary."
+    
+    def analyze_buy_sell_sentiment(self, comments: List[str]) -> Dict:
+        """
+        Analyze comments for buy/sell signals and overall sentiment
+        """
+        buy_keywords = ['buy', 'long', 'bull', 'bullish', 'up', 'rise', 'higher', 'pump', 'moon']
+        sell_keywords = ['sell', 'short', 'bear', 'bearish', 'down', 'drop', 'fall', 'dump', 'crash']
+        
+        buy_count = 0
+        sell_count = 0
+        sentiment_scores = []
+        
+        for comment in comments:
+            lower_comment = comment.lower()
+            
+            # Count buy/sell signals
+            if any(word in lower_comment for word in buy_keywords):
+                buy_count += 1
+            if any(word in lower_comment for word in sell_keywords):
+                sell_count += 1
+            
+            # Get sentiment score
+            sentiment = self.perform_sentiment_analysis(comment)
+            sentiment_scores.append(sentiment['score'])
+        
+        # Calculate overall sentiment
+        overall_sentiment = sum(sentiment_scores) / len(sentiment_scores) if sentiment_scores else 0.0
+        
+        # Determine recommendation
+        if buy_count > sell_count * 1.5:  # Require significant buy bias
+            recommendation = "Buy"
+        elif sell_count > buy_count * 1.5:  # Require significant sell bias
+            recommendation = "Sell"
+        else:
+            recommendation = "Neutral"
+        
+        return {
+            'buy_count': buy_count,
+            'sell_count': sell_count,
+            'total_comments': len(comments),
+            'recommendation': recommendation,
+            'overall_sentiment': round(overall_sentiment, 4),
+            'sentiment_label': 'Positive' if overall_sentiment > 0.05 else 'Negative' if overall_sentiment < -0.05 else 'Neutral'
+        }
+    
+    def store_discussion_comments(self, market: str, comments: List[str]):
+        """Store discussion comments with sentiment in database"""
+        try:
+            with sqlite3.connect(self.db_path) as conn:
+                records_stored = 0
+                for comment in comments:
+                    try:
+                        sentiment = self.perform_sentiment_analysis(comment)
+                        
+                        conn.execute('''
+                            INSERT OR IGNORE INTO discussion_comments 
+                            (market, comment_text, sentiment_score, sentiment_label)
+                            VALUES (?, ?, ?, ?)
+                        ''', (market, comment, sentiment['score'], sentiment['label']))
+                        
+                        records_stored += 1
+                        
+                    except Exception as e:
+                        self.logger.error(f"Error storing comment: {e}")
+                        continue
+                
+                conn.commit()
+                self.logger.info(f"Stored {records_stored} discussion comments for {market}")
+                
+        except Exception as e:
+            self.logger.error(f"Database storage failed: {e}")
+    
+    def store_market_analysis(self, market: str, summary: str, analysis: Dict):
+        """Store market analysis summary in database"""
+        try:
+            with sqlite3.connect(self.db_path) as conn:
+                analysis_date = datetime.now().strftime('%Y-%m-%d')
+                
+                conn.execute('''
+                    INSERT OR REPLACE INTO market_analysis 
+                    (market, analysis_date, summary, buy_count, sell_count, total_comments, 
+                     recommendation, overall_sentiment)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                ''', (market, analysis_date, summary, analysis['buy_count'], analysis['sell_count'],
+                     analysis['total_comments'], analysis['recommendation'], analysis['overall_sentiment']))
+                
+                conn.commit()
+                self.logger.info(f"Stored market analysis for {market}")
+                
+        except Exception as e:
+            self.logger.error(f"Failed to store market analysis: {e}")
+    
+    def run_integration(self, from_date: str = None, to_date: str = None):
+        """
+        Run full news and events integration
+        """
+        self.logger.info("Starting news integration")
+        
+        # Fetch and store economic events
+        events_df = self.fetch_economic_calendar(from_date, to_date)
+        if not events_df.empty:
+            self.store_economic_events(events_df)
+        
+        # Process each market
+        for market, symbol in self.config['symbols'].items():
+            self.logger.info(f"Processing {market} ({symbol})")
+            
+            # Fetch and store news articles
+            articles = self.fetch_news_articles(symbol)
+            if articles:
+                self.store_news_articles(symbol, articles)
+            
+            # Fetch and analyze discussion comments
+            comments = self.fetch_discussion_comments(market)
+            if comments:
+                self.store_discussion_comments(market, comments)
+                
+                # Generate summary and analysis
+                summary = self.summarize_comments(comments)
+                analysis = self.analyze_buy_sell_sentiment(comments)
+                
+                # Store the analysis
+                self.store_market_analysis(market, summary, analysis)
+                
+                # Log results
+                self.logger.info(f"Summary for {market}: {summary}")
+                self.logger.info(f"Analysis for {market}: Buy: {analysis['buy_count']}, "
+                               f"Sell: {analysis['sell_count']}, Recommendation: {analysis['recommendation']}, "
+                               f"Sentiment: {analysis['sentiment_label']} ({analysis['overall_sentiment']})")
+        
+        self.logger.info("News integration completed")
+    
+    def display_results(self):
+        """Display results in formatted tables"""
+        try:
+            with sqlite3.connect(self.db_path) as conn:
+                # Economic Events
+                print("\n" + "="*80)
+                print("ECONOMIC EVENTS")
+                print("="*80)
+                df_events = pd.read_sql_query('''
+                    SELECT event_date, event_time, currency, importance, event_name, actual, forecast, previous
+                    FROM economic_events 
+                    ORDER BY event_date DESC, event_time DESC 
+                    LIMIT 10
+                ''', conn)
+                if not df_events.empty:
+                    print(df_events.to_string(index=False))
+                else:
+                    print("No economic events found.")
+                
+                # News Articles
+                print("\n" + "="*80)
+                print("NEWS ARTICLES")
+                print("="*80)
+                df_news = pd.read_sql_query('''
+                    SELECT symbol, title, publisher, sentiment_label, sentiment_score, published_at
+                    FROM news_articles 
+                    WHERE title != '' AND title IS NOT NULL
+                    ORDER BY published_at DESC 
+                    LIMIT 10
+                ''', conn)
+                if not df_news.empty:
+                    # Truncate long titles for display
+                    df_news['title'] = df_news['title'].str[:60] + '...'
+                    print(df_news.to_string(index=False))
+                else:
+                    print("No news articles found.")
+                
+                # Market Analysis Summary
+                print("\n" + "="*80)
+                print("MARKET ANALYSIS SUMMARY")
+                print("="*80)
+                df_analysis = pd.read_sql_query('''
+                    SELECT market, buy_count, sell_count, total_comments, recommendation, 
+                           overall_sentiment, analysis_date, summary
+                    FROM market_analysis 
+                    ORDER BY analysis_date DESC
+                ''', conn)
+                if not df_analysis.empty:
+                    for _, row in df_analysis.iterrows():
+                        print(f"\n{row['market']} - {row['analysis_date']}")
+                        print(f"Recommendation: {row['recommendation']}")
+                        print(f"Buy Signals: {row['buy_count']} | Sell Signals: {row['sell_count']} | Total Comments: {row['total_comments']}")
+                        print(f"Overall Sentiment: {row['overall_sentiment']} ")
+                        print(f"Summary: {row['summary'][:200]}...")
+                        print("-" * 60)
+                else:
+                    print("No market analysis found.")
+                
+        except Exception as e:
+            self.logger.error(f"Failed to display results: {e}")
+
+
+def main():
+    """
+    Main execution function
+    """
+    try:
+        integrator = NewsIntegrator()
+        
+        # Run integration for last 3 days
+        from_date = (datetime.now(integrator.cat_tz) - timedelta(days=3)).strftime('%d/%m/%Y')
+        to_date = datetime.now(integrator.cat_tz).strftime('%d/%m/%Y')
+        
+        integrator.run_integration(from_date, to_date)
+        
+        # Display formatted results
+        integrator.display_results()
+        
+    except Exception as e:
+        print(f"Error running integration: {e}")
+
+
+if __name__ == "__main__":
+    main()

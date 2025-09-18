@@ -1,0 +1,560 @@
+2025-09-16 14:00:26,670 - __main__ - INFO - Database setup for news integration completed successfully
+2025-09-16 14:00:26,703 - __main__ - INFO - Starting news integration
+2025-09-16 14:00:26,703 - __main__ - INFO - Fetching economic calendar from 09/09/2025 to 16/09/2025
+2025-09-16 14:00:28,029 - __main__ - INFO - Fetched 45 economic events
+2025-09-16 14:00:28,041 - __main__ - INFO - Stored 45 economic events
+2025-09-16 14:00:29,409 - __main__ - INFO - Fetched 10 news articles for GC=F
+2025-09-16 14:00:29,413 - __main__ - INFO - Stored 10 news articles for GC=F
+2025-09-16 14:00:29,752 - __main__ - INFO - Fetched 10 news articles for ^NDX
+2025-09-16 14:00:29,756 - __main__ - INFO - Stored 10 news articles for ^NDX
+2025-09-16 14:00:30,136 - __main__ - INFO - Fetched 10 news articles for BTC-USD
+2025-09-16 14:00:30,140 - __main__ - INFO - Stored 10 news articles for BTC-USD
+2025-09-16 14:00:30,490 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:00:30,781 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:00:31,421 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:00:31,733 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:00:32,381 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:00:32,661 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:00:32,972 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:00:33,296 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:00:33,597 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:00:33,886 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:00:34,140 - yfinance - ERROR - 
+1 Failed download:
+2025-09-16 14:00:34,140 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-09 22:30:00+02:00 -> 2025-09-10 00:30:00+02:00)')
+2025-09-16 14:00:34,433 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:00:34,739 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:00:35,019 - __main__ - ERROR - Error correlating ^NDX: Error binding parameter 4: type 'Series' is not supported
+2025-09-16 14:00:35,315 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:00:35,316 - __main__ - INFO - News integration completed
+2025-09-16 14:06:50,783 - __main__ - INFO - Database setup for news integration completed successfully
+2025-09-16 14:06:50,831 - __main__ - INFO - Starting news integration
+2025-09-16 14:06:50,831 - __main__ - INFO - Fetching economic calendar from 09/09/2025 to 16/09/2025
+2025-09-16 14:06:52,571 - __main__ - INFO - Fetched 45 economic events
+2025-09-16 14:06:52,581 - __main__ - INFO - Stored 45 economic events
+2025-09-16 14:06:53,522 - __main__ - INFO - Fetched 10 news articles for GC=F
+2025-09-16 14:06:53,528 - __main__ - INFO - Stored 10 news articles for GC=F
+2025-09-16 14:06:55,330 - __main__ - INFO - Fetched 33 comments for GOLD
+2025-09-16 14:06:55,385 - __main__ - INFO - Stored 33 discussion comments for GOLD
+2025-09-16 14:06:55,864 - __main__ - INFO - Fetched 10 news articles for ^NDX
+2025-09-16 14:06:55,869 - __main__ - INFO - Stored 10 news articles for ^NDX
+2025-09-16 14:06:57,109 - __main__ - INFO - Fetched 36 comments for NAS100
+2025-09-16 14:06:57,124 - __main__ - INFO - Stored 36 discussion comments for NAS100
+2025-09-16 14:06:57,693 - __main__ - INFO - Fetched 10 news articles for BTC-USD
+2025-09-16 14:06:57,697 - __main__ - INFO - Stored 10 news articles for BTC-USD
+2025-09-16 14:06:58,835 - __main__ - ERROR - Failed to fetch https://www.investing.com/crypto/bitcoin/btc-usd-commentary: Status 404
+2025-09-16 14:06:59,157 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:06:59,456 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:06:59,813 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:07:00,180 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:07:00,478 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:07:00,777 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:07:01,090 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:07:01,432 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:07:01,762 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:07:02,045 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:07:02,304 - yfinance - ERROR - 
+1 Failed download:
+2025-09-16 14:07:02,304 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-09 22:30:00+02:00 -> 2025-09-10 00:30:00+02:00)')
+2025-09-16 14:07:02,674 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:07:03,281 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:07:03,588 - __main__ - ERROR - Error correlating ^NDX: Error binding parameter 4: type 'Series' is not supported
+2025-09-16 14:07:06,392 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:07:06,392 - __main__ - INFO - News integration completed
+2025-09-16 14:12:10,543 - __main__ - INFO - Database setup for news integration completed successfully
+2025-09-16 14:12:10,589 - __main__ - INFO - Starting news integration
+2025-09-16 14:12:10,589 - __main__ - INFO - Fetching economic calendar from 09/09/2025 to 16/09/2025
+2025-09-16 14:12:12,349 - __main__ - INFO - Fetched 45 economic events
+2025-09-16 14:12:12,363 - __main__ - INFO - Stored 45 economic events
+2025-09-16 14:12:13,665 - __main__ - INFO - Fetched 10 news articles for GC=F
+2025-09-16 14:12:13,671 - __main__ - INFO - Stored 10 news articles for GC=F
+2025-09-16 14:12:14,975 - __main__ - INFO - Fetched 30 comments for GOLD
+2025-09-16 14:12:15,034 - __main__ - INFO - Stored 30 discussion comments for GOLD
+2025-09-16 14:12:15,035 - __main__ - ERROR - Failed to summarize comments: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/thabangteddy/nltk_data'
+    - '/Users/thabangteddy/Downloads/TradeTedFX/.venv/nltk_data'
+    - '/Users/thabangteddy/Downloads/TradeTedFX/.venv/share/nltk_data'
+    - '/Users/thabangteddy/Downloads/TradeTedFX/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-09-16 14:12:15,036 - __main__ - INFO - Summary for GOLD: 
+2025-09-16 14:12:15,036 - __main__ - INFO - Analysis for GOLD: Buy: 7, Sell: 14, Recommendation: Sell
+2025-09-16 14:12:15,554 - __main__ - INFO - Fetched 10 news articles for ^NDX
+2025-09-16 14:12:15,558 - __main__ - INFO - Stored 10 news articles for ^NDX
+2025-09-16 14:12:17,512 - __main__ - INFO - Fetched 37 comments for NAS100
+2025-09-16 14:12:17,604 - __main__ - INFO - Stored 37 discussion comments for NAS100
+2025-09-16 14:12:17,605 - __main__ - ERROR - Failed to summarize comments: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/thabangteddy/nltk_data'
+    - '/Users/thabangteddy/Downloads/TradeTedFX/.venv/nltk_data'
+    - '/Users/thabangteddy/Downloads/TradeTedFX/.venv/share/nltk_data'
+    - '/Users/thabangteddy/Downloads/TradeTedFX/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-09-16 14:12:17,605 - __main__ - INFO - Summary for NAS100: 
+2025-09-16 14:12:17,605 - __main__ - INFO - Analysis for NAS100: Buy: 5, Sell: 5, Recommendation: Neutral
+2025-09-16 14:12:18,082 - __main__ - INFO - Fetched 10 news articles for BTC-USD
+2025-09-16 14:12:18,086 - __main__ - INFO - Stored 10 news articles for BTC-USD
+2025-09-16 14:12:18,877 - __main__ - ERROR - Failed to fetch https://www.investing.com/crypto/bitcoin/btc-usd-commentary: Status 404
+2025-09-16 14:12:19,232 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:12:19,512 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:12:19,815 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:12:20,124 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:12:20,484 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:12:20,791 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:12:21,092 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:12:21,406 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:12:21,714 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:12:22,040 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:12:22,323 - yfinance - ERROR - 
+1 Failed download:
+2025-09-16 14:12:22,323 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-09 20:30:00+00:00 -> 2025-09-09 22:30:00+00:00)')
+2025-09-16 14:12:22,631 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:12:22,947 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:12:23,244 - __main__ - ERROR - Error correlating ^NDX: Error binding parameter 4: type 'Series' is not supported
+2025-09-16 14:12:23,563 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:12:23,563 - __main__ - INFO - News integration completed
+2025-09-16 14:16:02,436 - __main__ - INFO - Database setup for news integration completed successfully
+2025-09-16 14:16:02,475 - __main__ - INFO - Starting news integration
+2025-09-16 14:16:02,475 - __main__ - INFO - Fetching economic calendar from 09/09/2025 to 16/09/2025
+2025-09-16 14:16:04,259 - __main__ - INFO - Fetched 45 economic events
+2025-09-16 14:16:04,271 - __main__ - INFO - Stored 45 economic events
+2025-09-16 14:16:05,293 - __main__ - INFO - Fetched 10 news articles for GC=F
+2025-09-16 14:16:05,298 - __main__ - INFO - Stored 10 news articles for GC=F
+2025-09-16 14:16:07,280 - __main__ - INFO - Fetched 30 comments for GOLD
+2025-09-16 14:16:07,339 - __main__ - INFO - Stored 30 discussion comments for GOLD
+2025-09-16 14:16:07,371 - __main__ - INFO - Summary for GOLD: Give some breathe to seller also most optimal move would be heavy take profit here, sharp buy until rate decision and then more up and ultimately real correction 55000 Not a single day buyers worried in last 15 days... rather at dip they bought sharply... sellers almost vanished and one who r there still hoping for miracle downmove last 3 month even Look at the dollar tank lol. Cant be better news for gold. sell at 3746 Sold Gold 109400/110500 Target 96555 More Gold 91734 Level 26857 us dollar is I'm a descending channel, perhaps bottom around retail sale or us open time We've got some good resistance.
+2025-09-16 14:16:07,371 - __main__ - INFO - Analysis for GOLD: Buy: 7, Sell: 14, Recommendation: Sell
+2025-09-16 14:16:07,806 - __main__ - INFO - Fetched 10 news articles for ^NDX
+2025-09-16 14:16:07,811 - __main__ - INFO - Stored 10 news articles for ^NDX
+2025-09-16 14:16:09,875 - __main__ - INFO - Fetched 37 comments for NAS100
+2025-09-16 14:16:09,891 - __main__ - INFO - Stored 37 discussion comments for NAS100
+2025-09-16 14:16:09,892 - __main__ - INFO - Summary for NAS100: Rsi need to adjusted the overvalued territory,  LOD will be fine than next leg up . Hopefully to test Above magnet ATH and squeeze the bears to 24444 Normally the DAX is 1000 points ahead of the Nasdaq Wouldn't be surprised if the top is already in. Wait and see...
+2025-09-16 14:16:09,892 - __main__ - INFO - Analysis for NAS100: Buy: 5, Sell: 5, Recommendation: Neutral
+2025-09-16 14:16:10,770 - __main__ - INFO - Fetched 10 news articles for BTC-USD
+2025-09-16 14:16:10,773 - __main__ - INFO - Stored 10 news articles for BTC-USD
+2025-09-16 14:16:11,723 - __main__ - ERROR - Failed to fetch https://www.investing.com/crypto/bitcoin/btc-usd-commentary: Status 404
+2025-09-16 14:16:12,093 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:16:12,380 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:16:12,686 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:16:12,947 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:16:13,242 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:16:13,596 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:16:13,897 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:16:14,204 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:16:14,506 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:16:15,144 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:16:15,437 - __main__ - ERROR - Error correlating ^NDX: Error binding parameter 3: type 'Series' is not supported
+2025-09-16 14:16:15,723 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:16:15,992 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:16:16,247 - yfinance - ERROR - 
+1 Failed download:
+2025-09-16 14:16:16,247 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-10 11:30:00+00:00 -> 2025-09-10 13:30:00+00:00)')
+2025-09-16 14:16:16,558 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:16:16,558 - __main__ - INFO - News integration completed
+2025-09-16 14:17:10,726 - __main__ - INFO - Database setup for news integration completed successfully
+2025-09-16 14:17:10,870 - __main__ - INFO - Starting news integration
+2025-09-16 14:17:10,870 - __main__ - INFO - Fetching economic calendar from 09/09/2025 to 16/09/2025
+2025-09-16 14:17:12,825 - __main__ - INFO - Fetched 45 economic events
+2025-09-16 14:17:12,852 - __main__ - INFO - Stored 45 economic events
+2025-09-16 14:17:13,801 - __main__ - INFO - Fetched 10 news articles for GC=F
+2025-09-16 14:17:13,815 - __main__ - INFO - Stored 10 news articles for GC=F
+2025-09-16 14:17:15,918 - __main__ - INFO - Fetched 30 comments for GOLD
+2025-09-16 14:17:15,972 - __main__ - INFO - Stored 30 discussion comments for GOLD
+2025-09-16 14:17:16,001 - __main__ - INFO - Summary for GOLD: Give some breathe to seller also most optimal move would be heavy take profit here, sharp buy until rate decision and then more up and ultimately real correction 55000 Not a single day buyers worried in last 15 days... rather at dip they bought sharply... sellers almost vanished and one who r there still hoping for miracle downmove last 3 month even Look at the dollar tank lol. Cant be better news for gold. sell at 3746 Sold Gold 109400/110500 Target 96555 More Gold 91734 Level 26857 us dollar is I'm a descending channel, perhaps bottom around retail sale or us open time We've got some good resistance.
+2025-09-16 14:17:16,001 - __main__ - INFO - Analysis for GOLD: Buy: 7, Sell: 14, Recommendation: Sell
+2025-09-16 14:17:16,310 - __main__ - INFO - Fetched 10 news articles for ^NDX
+2025-09-16 14:17:16,313 - __main__ - INFO - Stored 10 news articles for ^NDX
+2025-09-16 14:17:17,872 - __main__ - INFO - Fetched 38 comments for NAS100
+2025-09-16 14:17:17,889 - __main__ - INFO - Stored 38 discussion comments for NAS100
+2025-09-16 14:17:17,890 - __main__ - INFO - Summary for NAS100: Who cares about interest rates, the one to run away with profits first is the winner. you just described a ponzi Rsi need to adjusted the overvalued territory,  LOD will be fine than next leg up . Hopefully to test Above magnet ATH and squeeze the bears to 24444 Normally the DAX is 1000 points ahead of the Nasdaq Wouldn't be surprised if the top is already in.
+2025-09-16 14:17:17,890 - __main__ - INFO - Analysis for NAS100: Buy: 5, Sell: 5, Recommendation: Neutral
+2025-09-16 14:17:18,365 - __main__ - INFO - Fetched 10 news articles for BTC-USD
+2025-09-16 14:17:18,370 - __main__ - INFO - Stored 10 news articles for BTC-USD
+2025-09-16 14:17:19,184 - __main__ - ERROR - Failed to fetch https://www.investing.com/crypto/bitcoin/btc-usd-commentary: Status 404
+2025-09-16 14:17:19,548 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:17:19,852 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:17:20,150 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:17:20,461 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:17:20,762 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:17:21,067 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:17:21,380 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:17:21,659 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:17:21,962 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:17:22,284 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:17:22,562 - __main__ - ERROR - Error correlating ^NDX: Error binding parameter 3: type 'Series' is not supported
+2025-09-16 14:17:22,838 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:17:23,121 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:17:23,368 - yfinance - ERROR - 
+1 Failed download:
+2025-09-16 14:17:23,368 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-10 11:30:00+00:00 -> 2025-09-10 13:30:00+00:00)')
+2025-09-16 14:17:23,662 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:17:23,663 - __main__ - INFO - News integration completed
+2025-09-16 14:20:16,944 - __main__ - INFO - Database setup for news integration completed successfully
+2025-09-16 14:20:16,978 - __main__ - INFO - Starting news integration
+2025-09-16 14:20:16,978 - __main__ - INFO - Fetching economic calendar from 09/09/2025 to 16/09/2025
+2025-09-16 14:20:19,253 - __main__ - INFO - Fetched 45 economic events
+2025-09-16 14:20:19,266 - __main__ - INFO - Stored 45 economic events
+2025-09-16 14:20:20,411 - __main__ - INFO - Fetched 10 news articles for GC=F
+2025-09-16 14:20:20,416 - __main__ - INFO - Stored 10 news articles for GC=F
+2025-09-16 14:20:22,762 - __main__ - INFO - Fetched 30 comments for GOLD
+2025-09-16 14:20:22,814 - __main__ - INFO - Stored 30 discussion comments for GOLD
+2025-09-16 14:20:22,843 - __main__ - INFO - Summary for GOLD: Give some breathe to seller also most optimal move would be heavy take profit here, sharp buy until rate decision and then more up and ultimately real correction 55000 Not a single day buyers worried in last 15 days... rather at dip they bought sharply... sellers almost vanished and one who r there still hoping for miracle downmove last 3 month even Look at the dollar tank lol. Cant be better news for gold. sell at 3746 Sold Gold 109400/110500 Target 96555 More Gold 91734 Level 26857 us dollar is I'm a descending channel, perhaps bottom around retail sale or us open time We've got some good resistance.
+2025-09-16 14:20:22,844 - __main__ - INFO - Analysis for GOLD: Buy: 7, Sell: 14, Recommendation: Sell
+2025-09-16 14:20:23,382 - __main__ - INFO - Fetched 10 news articles for ^NDX
+2025-09-16 14:20:23,387 - __main__ - INFO - Stored 10 news articles for ^NDX
+2025-09-16 14:20:25,269 - __main__ - INFO - Fetched 38 comments for NAS100
+2025-09-16 14:20:25,285 - __main__ - INFO - Stored 38 discussion comments for NAS100
+2025-09-16 14:20:25,286 - __main__ - INFO - Summary for NAS100: Who cares about interest rates, the one to run away with profits first is the winner. you just described a ponzi Rsi need to adjusted the overvalued territory,  LOD will be fine than next leg up . Hopefully to test Above magnet ATH and squeeze the bears to 24444 Normally the DAX is 1000 points ahead of the Nasdaq Wouldn't be surprised if the top is already in.
+2025-09-16 14:20:25,286 - __main__ - INFO - Analysis for NAS100: Buy: 5, Sell: 5, Recommendation: Neutral
+2025-09-16 14:20:25,944 - __main__ - INFO - Fetched 10 news articles for BTC-USD
+2025-09-16 14:20:25,948 - __main__ - INFO - Stored 10 news articles for BTC-USD
+2025-09-16 14:20:27,730 - __main__ - INFO - Fetched 0 comments for BTCUSD
+2025-09-16 14:20:28,106 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:20:28,397 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:20:28,699 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:20:29,035 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:20:29,333 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:20:29,689 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:20:30,014 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:20:30,371 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:20:30,723 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:20:31,477 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:20:31,775 - __main__ - ERROR - Error correlating ^NDX: Error binding parameter 3: type 'Series' is not supported
+2025-09-16 14:20:32,091 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:20:32,406 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:20:32,713 - yfinance - ERROR - 
+1 Failed download:
+2025-09-16 14:20:32,713 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-10 11:30:00+00:00 -> 2025-09-10 13:30:00+00:00)')
+2025-09-16 14:20:33,054 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:20:33,055 - __main__ - INFO - News integration completed
+2025-09-16 14:23:31,060 - __main__ - INFO - Database setup for news integration completed successfully
+2025-09-16 14:23:31,094 - __main__ - INFO - Starting news integration
+2025-09-16 14:23:31,094 - __main__ - INFO - Fetching economic calendar from 09/09/2025 to 16/09/2025
+2025-09-16 14:23:32,475 - __main__ - INFO - Fetched 45 economic events
+2025-09-16 14:23:32,488 - __main__ - INFO - Stored 45 economic events
+2025-09-16 14:23:33,453 - __main__ - INFO - Fetched 10 news articles for GC=F
+2025-09-16 14:23:33,462 - __main__ - INFO - Stored 10 news articles for GC=F
+2025-09-16 14:23:35,392 - __main__ - INFO - Fetched 31 comments for GOLD
+2025-09-16 14:23:35,445 - __main__ - INFO - Stored 31 discussion comments for GOLD
+2025-09-16 14:23:35,477 - __main__ - INFO - Summary for GOLD: 1,15,000 Final Target Before Deepwali 1,15,000 Final Target Before Deepwali 1,15,000 Final Target Before Deepwali Give some breathe to seller also Noo most optimal move would be heavy take profit here, sharp buy until rate decision and then more up and ultimately real correction 55000 Not a single day buyers worried in last 15 days... rather at dip they bought sharply... sellers almost vanished and one who r there still hoping for miracle downmove last 3 month even Look at the dollar tank lol. Cant be better news for gold. sell at 3746 Sold Gold 109400/110500 Target 96555 More Gold 91734 Level 26857 hahaha more edit msg frm 96000 LOL.how many id u have us dollar is I'm a descending channel, perhaps bottom around retail sale or us open time We've got some good resistance.
+2025-09-16 14:23:35,478 - __main__ - INFO - Analysis for GOLD: Buy: 7, Sell: 12, Recommendation: Sell
+2025-09-16 14:23:35,797 - __main__ - INFO - Fetched 10 news articles for ^NDX
+2025-09-16 14:23:35,801 - __main__ - INFO - Stored 10 news articles for ^NDX
+2025-09-16 14:23:37,733 - __main__ - INFO - Fetched 39 comments for NAS100
+2025-09-16 14:23:37,749 - __main__ - INFO - Stored 39 discussion comments for NAS100
+2025-09-16 14:23:37,750 - __main__ - INFO - Summary for NAS100: Hey wreckless thanks for the go fund me. I was at 60 mnqs 536.25 ovn while sleeping I left 80 additional mnq shorts at 636.25 100 pts up and failing a Stat zone that puts my average at 593.25 on 140 mnqs and just for insurance I placed 25 nqs at the same 636.25 and a take profit at the bottom of the Stat zone at 601.50 so filled 25 nqs x 34.75 pts=17,250.50 net after commissions and no I have some insurance to keep riding the 140 mnqs and I have room for more so let's see how things work out take profits are in the 494.50 to 470.50 lfg same thing if it goes up will add to the mnqs scalp out when possible and will see how today plays out my big money comes tomorrow watch, as you have seen in the past, remeber investing club room, and learn Who cares about interest rates, the one to run away with profits first is the winner. you just described a ponzi Rsi need to adjusted the overvalued territory,  LOD will be fine than next leg up .
+2025-09-16 14:23:37,750 - __main__ - INFO - Analysis for NAS100: Buy: 7, Sell: 6, Recommendation: Buy
+2025-09-16 14:23:38,218 - __main__ - INFO - Fetched 10 news articles for BTC-USD
+2025-09-16 14:23:38,222 - __main__ - INFO - Stored 10 news articles for BTC-USD
+2025-09-16 14:23:38,572 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:23:38,875 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:23:39,184 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:23:39,461 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:23:40,145 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:23:40,490 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:23:40,767 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:23:41,073 - __main__ - ERROR - Error correlating ^NDX: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:23:41,384 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:23:41,692 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:23:42,020 - __main__ - ERROR - Error correlating ^NDX: Error binding parameter 3: type 'Series' is not supported
+2025-09-16 14:23:42,404 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:23:42,701 - __main__ - ERROR - Error correlating GC=F: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:23:43,330 - yfinance - ERROR - 
+1 Failed download:
+2025-09-16 14:23:43,331 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-10 11:30:00+00:00 -> 2025-09-10 13:30:00+00:00)')
+2025-09-16 14:23:43,616 - __main__ - ERROR - Error correlating BTC-USD: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-09-16 14:23:43,616 - __main__ - INFO - News integration completed
+2025-09-16 14:46:25,294 - __main__ - INFO - Database setup for news integration completed successfully
+2025-09-16 14:46:25,370 - __main__ - INFO - Starting news integration
+2025-09-16 14:46:25,370 - __main__ - INFO - Fetching economic calendar from 09/09/2025 to 16/09/2025
+2025-09-16 14:46:27,200 - __main__ - INFO - Fetched 45 economic events
+2025-09-16 14:46:27,212 - __main__ - INFO - Stored 45 economic events
+2025-09-16 14:46:28,275 - __main__ - INFO - Fetched 0 news articles for GC=F
+2025-09-16 14:46:30,612 - __main__ - INFO - Fetched 30 comments for GOLD
+2025-09-16 14:46:30,675 - __main__ - INFO - Stored 30 discussion comments for GOLD
+2025-09-16 14:46:30,711 - __main__ - INFO - Summary for GOLD: Too high Noo people say 4000 end of month so too low :-)) rockt launch retail sales at 0.7%vs 0.3 and 0.6% vs 0.2 Sold Gold 109400/110500 Target 96555 More Gold 91734 Level 26857 Now It's time to short and Hold ,it will go down surly don't short guys buy every dip only Only up fantastic Just can’t go red don't short guys buy every dip only don't short guys buy every dip only If price holds above $3,710 and momentum stays positive, expect retest of $3,740; break above $3,760 opens $3,800. If price fails $3,700, expect a pullback toward $3,670. 1,15,000 Final Target Before Deepwali 1,15,000 Final Target Before Deepwali 1,15,000 Final Target Before Deepwali Give some breathe to seller also Noo most optimal move would be heavy take profit here, sharp buy until rate decision and then more up and ultimately real correction 55000 Not a single day buyers worried in last 15 days... rather at dip they bought sharply... sellers almost vanished and one who r there still hoping for miracle downmove last 3 month even Look at the dollar tank lol.
+2025-09-16 14:46:30,712 - __main__ - INFO - Analysis for GOLD: Buy: 7, Sell: 9, Recommendation: Sell
+2025-09-16 14:46:31,240 - __main__ - INFO - Fetched 0 news articles for ^NDX
+2025-09-16 14:46:32,873 - __main__ - INFO - Fetched 39 comments for NAS100
+2025-09-16 14:46:32,894 - __main__ - INFO - Stored 39 discussion comments for NAS100
+2025-09-16 14:46:32,895 - __main__ - INFO - Summary for NAS100: this forum is perfect for knowing when to inverse sentiment lol all the big companies on positive at pre jump start US consumer is alive and well. Lots of $$ to go around. If stocks weren’t manipulated this report alone should bring down markets 1-2% it is so near that moving down moment must be agreed with banks and hedges its not slow and will have spike before 10th green day ?
+2025-09-16 14:46:32,896 - __main__ - INFO - Analysis for NAS100: Buy: 5, Sell: 7, Recommendation: Sell
+2025-09-16 14:46:33,467 - __main__ - INFO - Fetched 0 news articles for BTC-USD
+2025-09-16 14:46:33,831 - __main__ - INFO - Correlated event 136 with GC=F: 0.15% change
+2025-09-16 14:46:34,128 - __main__ - INFO - Correlated event 136 with ^NDX: -0.15% change
+2025-09-16 14:46:34,424 - __main__ - INFO - Correlated event 136 with BTC-USD: 0.05% change
+2025-09-16 14:46:34,756 - __main__ - INFO - Correlated event 137 with GC=F: 0.01% change
+2025-09-16 14:46:35,025 - __main__ - INFO - Correlated event 137 with ^NDX: -0.01% change
+2025-09-16 14:46:35,294 - __main__ - INFO - Correlated event 137 with BTC-USD: -0.10% change
+2025-09-16 14:46:35,569 - __main__ - INFO - Correlated event 138 with GC=F: 0.03% change
+2025-09-16 14:46:35,845 - __main__ - INFO - Correlated event 138 with ^NDX: 0.05% change
+2025-09-16 14:46:36,121 - __main__ - INFO - Correlated event 138 with BTC-USD: 0.02% change
+2025-09-16 14:46:36,438 - __main__ - INFO - Correlated event 139 with GC=F: -0.02% change
+2025-09-16 14:46:36,707 - __main__ - INFO - Correlated event 139 with ^NDX: 0.00% change
+2025-09-16 14:46:37,054 - __main__ - INFO - Correlated event 139 with BTC-USD: 0.01% change
+2025-09-16 14:46:37,671 - __main__ - INFO - Correlated event 140 with GC=F: 0.14% change
+2025-09-16 14:46:37,933 - yfinance - ERROR - 
+1 Failed download:
+2025-09-16 14:46:37,933 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-10 11:30:00+00:00 -> 2025-09-10 13:30:00+00:00)')
+2025-09-16 14:46:37,936 - __main__ - WARNING - No data for ^NDX around 2025-09-10 12:30:00+00:00
+2025-09-16 14:46:38,208 - __main__ - INFO - Correlated event 140 with BTC-USD: 0.63% change
+2025-09-16 14:46:38,209 - __main__ - INFO - News integration completed
+2025-09-17 13:42:52,500 - __main__ - INFO - Database setup for news integration completed successfully
+2025-09-17 13:42:52,531 - __main__ - INFO - Starting news integration
+2025-09-17 13:42:52,531 - __main__ - INFO - Fetching economic calendar from 10/09/2025 to 17/09/2025
+2025-09-17 13:42:54,830 - __main__ - INFO - Fetched 56 economic events
+2025-09-17 13:42:54,838 - __main__ - INFO - Stored 56 economic events
+2025-09-17 13:42:55,758 - __main__ - INFO - Fetched 0 news articles for GC=F
+2025-09-17 13:42:57,255 - __main__ - INFO - Fetched 30 comments for GOLD
+2025-09-17 13:42:57,305 - __main__ - INFO - Stored 30 discussion comments for GOLD
+2025-09-17 13:42:57,333 - __main__ - INFO - Summary for GOLD: gold 1st target 3000 2nd target 2700 sir after 2700? 1100 possible or not sir? Sold Gold, 108640/109400 Tgt 96555 Next Gold 91734 Level 26857.
+2025-09-17 13:42:57,334 - __main__ - INFO - Analysis for GOLD: Buy: 14, Sell: 12, Recommendation: Buy
+2025-09-17 13:42:57,825 - __main__ - INFO - Fetched 0 news articles for ^NDX
+2025-09-17 13:43:00,102 - __main__ - INFO - Fetched 29 comments for NAS100
+2025-09-17 13:43:00,115 - __main__ - INFO - Stored 29 discussion comments for NAS100
+2025-09-17 13:43:00,116 - __main__ - INFO - Summary for NAS100: Gonna explode on the news today here great buy Republican policies are great. We had approximately 2/3 of the American population in the middle class in 1970 and now down to 25%. Republicans want to implement policies that would reduce the middle class to 25% placing them in the lower class.
+2025-09-17 13:43:00,116 - __main__ - INFO - Analysis for NAS100: Buy: 9, Sell: 10, Recommendation: Sell
+2025-09-17 13:43:00,957 - __main__ - INFO - Fetched 0 news articles for BTC-USD
+2025-09-17 13:43:01,784 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 13:43:01,784 - yfinance - ERROR - ['GC=F']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 12:30:00+00:00 -> 2025-09-17 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758112200, endDate = 1758119400")')
+2025-09-17 13:43:01,792 - __main__ - WARNING - No data for GC=F around 2025-09-17 13:30:00+00:00
+2025-09-17 13:43:02,700 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 13:43:02,701 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 12:30:00+00:00 -> 2025-09-17 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758112200, endDate = 1758119400")')
+2025-09-17 13:43:02,703 - __main__ - WARNING - No data for ^NDX around 2025-09-17 13:30:00+00:00
+2025-09-17 13:43:03,565 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 13:43:03,566 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 12:30:00+00:00 -> 2025-09-17 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758112200, endDate = 1758119400")')
+2025-09-17 13:43:03,594 - __main__ - WARNING - No data for BTC-USD around 2025-09-17 13:30:00+00:00
+2025-09-17 13:43:04,379 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 13:43:04,379 - yfinance - ERROR - ['GC=F']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 12:30:00+00:00 -> 2025-09-17 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758112200, endDate = 1758119400")')
+2025-09-17 13:43:04,382 - __main__ - WARNING - No data for GC=F around 2025-09-17 13:30:00+00:00
+2025-09-17 13:43:05,123 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 13:43:05,123 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 12:30:00+00:00 -> 2025-09-17 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758112200, endDate = 1758119400")')
+2025-09-17 13:43:05,126 - __main__ - WARNING - No data for ^NDX around 2025-09-17 13:30:00+00:00
+2025-09-17 13:43:05,916 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 13:43:05,916 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 12:30:00+00:00 -> 2025-09-17 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758112200, endDate = 1758119400")')
+2025-09-17 13:43:05,919 - __main__ - WARNING - No data for BTC-USD around 2025-09-17 13:30:00+00:00
+2025-09-17 13:43:06,647 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 13:43:06,647 - yfinance - ERROR - ['GC=F']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 12:30:00+00:00 -> 2025-09-17 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758112200, endDate = 1758119400")')
+2025-09-17 13:43:06,649 - __main__ - WARNING - No data for GC=F around 2025-09-17 13:30:00+00:00
+2025-09-17 13:43:07,426 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 13:43:07,426 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 12:30:00+00:00 -> 2025-09-17 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758112200, endDate = 1758119400")')
+2025-09-17 13:43:07,429 - __main__ - WARNING - No data for ^NDX around 2025-09-17 13:30:00+00:00
+2025-09-17 13:43:08,205 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 13:43:08,205 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 12:30:00+00:00 -> 2025-09-17 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758112200, endDate = 1758119400")')
+2025-09-17 13:43:08,208 - __main__ - WARNING - No data for BTC-USD around 2025-09-17 13:30:00+00:00
+2025-09-17 13:43:08,978 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 13:43:08,978 - yfinance - ERROR - ['GC=F']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 14:30:00+00:00 -> 2025-09-17 16:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758119400, endDate = 1758126600")')
+2025-09-17 13:43:08,981 - __main__ - WARNING - No data for GC=F around 2025-09-17 15:30:00+00:00
+2025-09-17 13:43:09,723 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 13:43:09,724 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 14:30:00+00:00 -> 2025-09-17 16:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758119400, endDate = 1758126600")')
+2025-09-17 13:43:09,727 - __main__ - WARNING - No data for ^NDX around 2025-09-17 15:30:00+00:00
+2025-09-17 13:43:11,026 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 13:43:11,026 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 14:30:00+00:00 -> 2025-09-17 16:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758119400, endDate = 1758126600")')
+2025-09-17 13:43:11,029 - __main__ - WARNING - No data for BTC-USD around 2025-09-17 15:30:00+00:00
+2025-09-17 13:43:11,770 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 13:43:11,771 - yfinance - ERROR - ['GC=F']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 14:30:00+00:00 -> 2025-09-17 16:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758119400, endDate = 1758126600")')
+2025-09-17 13:43:11,774 - __main__ - WARNING - No data for GC=F around 2025-09-17 15:30:00+00:00
+2025-09-17 13:43:12,886 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 13:43:12,886 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 14:30:00+00:00 -> 2025-09-17 16:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758119400, endDate = 1758126600")')
+2025-09-17 13:43:12,888 - __main__ - WARNING - No data for ^NDX around 2025-09-17 15:30:00+00:00
+2025-09-17 13:43:13,636 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 13:43:13,636 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 14:30:00+00:00 -> 2025-09-17 16:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758119400, endDate = 1758126600")')
+2025-09-17 13:43:13,639 - __main__ - WARNING - No data for BTC-USD around 2025-09-17 15:30:00+00:00
+2025-09-17 13:43:13,639 - __main__ - INFO - News integration completed
+2025-09-17 15:05:29,097 - __main__ - INFO - Database setup for news integration completed successfully
+2025-09-17 15:05:29,148 - __main__ - INFO - Starting news integration
+2025-09-17 15:05:29,149 - __main__ - INFO - Fetching economic calendar from 10/09/2025 to 17/09/2025
+2025-09-17 15:05:30,371 - __main__ - INFO - Fetched 56 economic events
+2025-09-17 15:05:30,382 - __main__ - INFO - Stored 56 economic events
+2025-09-17 15:05:31,799 - __main__ - INFO - Fetched 0 news articles for GC=F
+2025-09-17 15:05:33,861 - __main__ - INFO - Fetched 28 comments for GOLD
+2025-09-17 15:05:33,910 - __main__ - INFO - Stored 28 discussion comments for GOLD
+2025-09-17 15:05:33,936 - __main__ - INFO - Summary for GOLD: Back to reality after the Bankster management episode Gold today huge drop $3425😊 broad based looks like a 25 cut only no 50 What do you guys think 25 or 50? Told to book profit from short Gold today huge drop $3415 Make up your mind you said it will drop below $3400 earlier, truth is you have no clue. Negative slow down is equivalent to positive speed up Negative slow down is equivalent to positive speed up 5000 Sell now I feel sorry for bears - in the next hour they know again they should have given the money to charity Gold will fall below 3400 Buy with stop of 10 points.
+2025-09-17 15:05:33,937 - __main__ - INFO - Analysis for GOLD: Buy: 9, Sell: 9, Recommendation: Neutral
+2025-09-17 15:05:34,854 - __main__ - INFO - Fetched 0 news articles for ^NDX
+2025-09-17 15:05:36,147 - __main__ - INFO - Fetched 36 comments for NAS100
+2025-09-17 15:05:36,162 - __main__ - INFO - Stored 36 discussion comments for NAS100
+2025-09-17 15:05:36,163 - __main__ - INFO - Summary for NAS100: Anyone not buying in advance of todays news has lost it lets go!! Bubble tech cant drop good morning sunshine's gm HW, time to make this $$$ 25K TODAY, I SWEAR! skender hajdari max 24500 then again down, we have 7 days waiting and pumping for the rate cats the up trend cant be infinit Not going anywhere it will be flat then down What if not u will do nothing  so f of Market  Watch fefs are cutting while the economy is growing??
+2025-09-17 15:05:36,163 - __main__ - INFO - Analysis for NAS100: Buy: 10, Sell: 10, Recommendation: Neutral
+2025-09-17 15:05:37,986 - __main__ - INFO - Fetched 0 news articles for BTC-USD
+2025-09-17 15:05:38,315 - __main__ - INFO - Correlated event 402 with GC=F: No change data
+2025-09-17 15:05:38,734 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 15:05:38,734 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 12:30:00+00:00 -> 2025-09-17 14:30:00+00:00)')
+2025-09-17 15:05:38,737 - __main__ - WARNING - No data for ^NDX around 2025-09-17 13:30:00+00:00
+2025-09-17 15:05:39,018 - __main__ - INFO - Correlated event 402 with BTC-USD: No change data
+2025-09-17 15:05:39,322 - __main__ - INFO - Correlated event 403 with GC=F: No change data
+2025-09-17 15:05:39,596 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 15:05:39,596 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 12:30:00+00:00 -> 2025-09-17 14:30:00+00:00)')
+2025-09-17 15:05:39,599 - __main__ - WARNING - No data for ^NDX around 2025-09-17 13:30:00+00:00
+2025-09-17 15:05:39,667 - __main__ - INFO - Correlated event 403 with BTC-USD: No change data
+2025-09-17 15:05:39,763 - __main__ - INFO - Correlated event 404 with GC=F: No change data
+2025-09-17 15:05:40,013 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 15:05:40,013 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 12:30:00+00:00 -> 2025-09-17 14:30:00+00:00)')
+2025-09-17 15:05:40,016 - __main__ - WARNING - No data for ^NDX around 2025-09-17 13:30:00+00:00
+2025-09-17 15:05:40,454 - __main__ - INFO - Correlated event 404 with BTC-USD: No change data
+2025-09-17 15:05:41,233 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 15:05:41,233 - yfinance - ERROR - ['GC=F']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 14:30:00+00:00 -> 2025-09-17 16:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758119400, endDate = 1758126600")')
+2025-09-17 15:05:41,236 - __main__ - WARNING - No data for GC=F around 2025-09-17 15:30:00+00:00
+2025-09-17 15:05:42,096 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 15:05:42,096 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 14:30:00+00:00 -> 2025-09-17 16:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758119400, endDate = 1758126600")')
+2025-09-17 15:05:42,099 - __main__ - WARNING - No data for ^NDX around 2025-09-17 15:30:00+00:00
+2025-09-17 15:05:42,895 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 15:05:42,895 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 14:30:00+00:00 -> 2025-09-17 16:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758119400, endDate = 1758126600")')
+2025-09-17 15:05:42,898 - __main__ - WARNING - No data for BTC-USD around 2025-09-17 15:30:00+00:00
+2025-09-17 15:05:43,799 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 15:05:43,800 - yfinance - ERROR - ['GC=F']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 14:30:00+00:00 -> 2025-09-17 16:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758119400, endDate = 1758126600")')
+2025-09-17 15:05:43,803 - __main__ - WARNING - No data for GC=F around 2025-09-17 15:30:00+00:00
+2025-09-17 15:05:45,402 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 15:05:45,402 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 14:30:00+00:00 -> 2025-09-17 16:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758119400, endDate = 1758126600")')
+2025-09-17 15:05:45,405 - __main__ - WARNING - No data for ^NDX around 2025-09-17 15:30:00+00:00
+2025-09-17 15:05:46,260 - yfinance - ERROR - 
+1 Failed download:
+2025-09-17 15:05:46,261 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-17 14:30:00+00:00 -> 2025-09-17 16:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758119400, endDate = 1758126600")')
+2025-09-17 15:05:46,263 - __main__ - WARNING - No data for BTC-USD around 2025-09-17 15:30:00+00:00
+2025-09-17 15:05:46,263 - __main__ - INFO - News integration completed
+2025-09-18 09:59:43,434 - __main__ - INFO - Database setup for news integration completed successfully
+2025-09-18 09:59:43,498 - __main__ - INFO - Starting news integration
+2025-09-18 09:59:43,498 - __main__ - INFO - Fetching economic calendar from 11/09/2025 to 18/09/2025
+2025-09-18 09:59:44,536 - __main__ - INFO - Fetched 58 economic events
+2025-09-18 09:59:44,549 - __main__ - INFO - Stored 58 economic events
+2025-09-18 09:59:46,414 - __main__ - INFO - Fetched 0 news articles for GC=F
+2025-09-18 09:59:47,756 - __main__ - INFO - Fetched 31 comments for GOLD
+2025-09-18 09:59:47,807 - __main__ - INFO - Stored 31 discussion comments for GOLD
+2025-09-18 09:59:47,835 - __main__ - INFO - Summary for GOLD: short sell current new highs buy every dip here and hold tight Gold will go higher thank Life High 3703 range to 3634.19 gold spot XAUUSD in 2days.....see sell call in XAUUSD.... I don't understand your posts, are we selling now?? or buying??
+2025-09-18 09:59:47,836 - __main__ - INFO - Analysis for GOLD: Buy: 8, Sell: 13, Recommendation: Sell
+2025-09-18 09:59:49,635 - __main__ - INFO - Fetched 0 news articles for ^NDX
+2025-09-18 09:59:51,158 - __main__ - INFO - Fetched 31 comments for NAS100
+2025-09-18 09:59:51,172 - __main__ - INFO - Stored 31 discussion comments for NAS100
+2025-09-18 09:59:51,173 - __main__ - INFO - Summary for NAS100: Last friday someone bought over 100k of 575 Puts QQQ expiring this friday. It seems like these were Hedges, the size of his Long Positions must be enormous Technical analys guys. This goes up to 25000.
+2025-09-18 09:59:51,173 - __main__ - INFO - Analysis for NAS100: Buy: 10, Sell: 6, Recommendation: Buy
+2025-09-18 09:59:51,584 - __main__ - INFO - Fetched 0 news articles for BTC-USD
+2025-09-18 09:59:52,410 - __main__ - INFO - Correlated event 513 with GC=F: 0.03% change
+2025-09-18 09:59:53,186 - __main__ - INFO - Correlated event 513 with ^NDX: -0.03% change
+2025-09-18 09:59:53,983 - __main__ - INFO - Correlated event 513 with BTC-USD: -0.03% change
+2025-09-18 09:59:55,381 - yfinance - ERROR - 
+1 Failed download:
+2025-09-18 09:59:55,381 - yfinance - ERROR - ['GC=F']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-18 12:30:00+00:00 -> 2025-09-18 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758198600, endDate = 1758205800")')
+2025-09-18 09:59:55,384 - __main__ - WARNING - No data for GC=F around 2025-09-18 13:30:00+00:00
+2025-09-18 09:59:58,088 - yfinance - ERROR - 
+1 Failed download:
+2025-09-18 09:59:58,088 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-18 12:30:00+00:00 -> 2025-09-18 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758198600, endDate = 1758205800")')
+2025-09-18 09:59:58,093 - __main__ - WARNING - No data for ^NDX around 2025-09-18 13:30:00+00:00
+2025-09-18 09:59:59,593 - yfinance - ERROR - 
+1 Failed download:
+2025-09-18 09:59:59,593 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-18 12:30:00+00:00 -> 2025-09-18 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758198600, endDate = 1758205800")')
+2025-09-18 09:59:59,596 - __main__ - WARNING - No data for BTC-USD around 2025-09-18 13:30:00+00:00
+2025-09-18 10:00:02,010 - yfinance - ERROR - 
+1 Failed download:
+2025-09-18 10:00:02,010 - yfinance - ERROR - ['GC=F']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-18 12:30:00+00:00 -> 2025-09-18 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758198600, endDate = 1758205800")')
+2025-09-18 10:00:02,013 - __main__ - WARNING - No data for GC=F around 2025-09-18 13:30:00+00:00
+2025-09-18 10:00:03,363 - yfinance - ERROR - 
+1 Failed download:
+2025-09-18 10:00:03,363 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-18 12:30:00+00:00 -> 2025-09-18 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758198600, endDate = 1758205800")')
+2025-09-18 10:00:03,366 - __main__ - WARNING - No data for ^NDX around 2025-09-18 13:30:00+00:00
+2025-09-18 10:00:05,379 - yfinance - ERROR - 
+1 Failed download:
+2025-09-18 10:00:05,379 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-18 12:30:00+00:00 -> 2025-09-18 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758198600, endDate = 1758205800")')
+2025-09-18 10:00:05,381 - __main__ - WARNING - No data for BTC-USD around 2025-09-18 13:30:00+00:00
+2025-09-18 10:00:07,574 - yfinance - ERROR - 
+1 Failed download:
+2025-09-18 10:00:07,575 - yfinance - ERROR - ['GC=F']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-18 12:30:00+00:00 -> 2025-09-18 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758198600, endDate = 1758205800")')
+2025-09-18 10:00:07,578 - __main__ - WARNING - No data for GC=F around 2025-09-18 13:30:00+00:00
+2025-09-18 10:00:09,808 - yfinance - ERROR - 
+1 Failed download:
+2025-09-18 10:00:09,808 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-18 12:30:00+00:00 -> 2025-09-18 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758198600, endDate = 1758205800")')
+2025-09-18 10:00:09,811 - __main__ - WARNING - No data for ^NDX around 2025-09-18 13:30:00+00:00
+2025-09-18 10:00:11,434 - yfinance - ERROR - 
+1 Failed download:
+2025-09-18 10:00:11,434 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-18 12:30:00+00:00 -> 2025-09-18 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758198600, endDate = 1758205800")')
+2025-09-18 10:00:11,438 - __main__ - WARNING - No data for BTC-USD around 2025-09-18 13:30:00+00:00
+2025-09-18 10:00:14,190 - yfinance - ERROR - 
+1 Failed download:
+2025-09-18 10:00:14,190 - yfinance - ERROR - ['GC=F']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-18 12:30:00+00:00 -> 2025-09-18 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758198600, endDate = 1758205800")')
+2025-09-18 10:00:14,193 - __main__ - WARNING - No data for GC=F around 2025-09-18 13:30:00+00:00
+2025-09-18 10:00:15,649 - yfinance - ERROR - 
+1 Failed download:
+2025-09-18 10:00:15,650 - yfinance - ERROR - ['^NDX']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-18 12:30:00+00:00 -> 2025-09-18 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758198600, endDate = 1758205800")')
+2025-09-18 10:00:15,653 - __main__ - WARNING - No data for ^NDX around 2025-09-18 13:30:00+00:00
+2025-09-18 10:00:17,604 - yfinance - ERROR - 
+1 Failed download:
+2025-09-18 10:00:17,604 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('possibly delisted; no price data found  (1m 2025-09-18 12:30:00+00:00 -> 2025-09-18 14:30:00+00:00) (Yahoo error = "Data doesn\'t exist for startDate = 1758198600, endDate = 1758205800")')
+2025-09-18 10:00:17,606 - __main__ - WARNING - No data for BTC-USD around 2025-09-18 13:30:00+00:00
+2025-09-18 10:00:17,606 - __main__ - INFO - News integration completed
+2025-09-18 10:13:37,556 - __main__ - INFO - Database setup completed successfully
+2025-09-18 10:13:37,589 - __main__ - INFO - Starting news integration
+2025-09-18 10:13:37,589 - __main__ - INFO - Fetching economic calendar from 15/09/2025 to 18/09/2025
+2025-09-18 10:13:38,964 - __main__ - INFO - Fetched 36 economic events
+2025-09-18 10:13:38,978 - __main__ - INFO - Stored 36 economic events
+2025-09-18 10:13:38,978 - __main__ - INFO - Processing GOLD (GC=F)
+2025-09-18 10:13:41,054 - __main__ - INFO - Fetched 0 valid news articles for GC=F
+2025-09-18 10:13:42,356 - __main__ - INFO - Fetched 25 comments for GOLD
+2025-09-18 10:13:42,401 - __main__ - INFO - Stored 25 discussion comments for GOLD
+2025-09-18 10:13:42,436 - __main__ - INFO - Stored market analysis for GOLD
+2025-09-18 10:13:42,437 - __main__ - INFO - Summary for GOLD: don't forget kaka's target Do not redeem the support! Go long! Keep buying saars!
+2025-09-18 10:13:42,437 - __main__ - INFO - Analysis for GOLD: Buy: 11, Sell: 12, Recommendation: Neutral, Sentiment: Neutral (0.0496)
+2025-09-18 10:13:42,437 - __main__ - INFO - Processing NAS100 (^NDX)
+2025-09-18 10:13:42,815 - __main__ - INFO - Fetched 0 valid news articles for ^NDX
+2025-09-18 10:13:45,236 - __main__ - INFO - Fetched 31 comments for NAS100
+2025-09-18 10:13:45,250 - __main__ - INFO - Stored 31 discussion comments for NAS100
+2025-09-18 10:13:45,263 - __main__ - INFO - Stored market analysis for NAS100
+2025-09-18 10:13:45,264 - __main__ - INFO - Summary for NAS100: The Ai is like the new born technology. Good i added more  semiconductor stocks. Donald want 25k today !
+2025-09-18 10:13:45,264 - __main__ - INFO - Analysis for NAS100: Buy: 12, Sell: 9, Recommendation: Neutral, Sentiment: Neutral (-0.0169)
+2025-09-18 10:13:45,264 - __main__ - INFO - Processing BTCUSD (BTC-USD)
+2025-09-18 10:13:45,632 - __main__ - INFO - Fetched 0 valid news articles for BTC-USD
+2025-09-18 10:13:45,632 - __main__ - WARNING - No discussion URL configured for BTCUSD
+2025-09-18 10:13:45,632 - __main__ - INFO - News integration completed

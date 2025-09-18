@@ -1,0 +1,3 @@
+id,date,account_balance,account_tier,total_trades,winning_trades,total_profit,max_drawdown,created_at
+1,2025-09-18,250.0,MICRO,0,0,0.0,0.0,2025-09-18 08:48:16
+2,2025-09-18,200.0,MICRO,0,0,0.0,0.0,2025-09-18 08:48:47

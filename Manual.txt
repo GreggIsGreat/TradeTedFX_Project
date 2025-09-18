@@ -11,13 +11,12 @@ This document outlines the goals, requirements, and functionality of the Python 
    - Support multiple timeframes (1m, 5m, 15m, 1h, 1d) ✅
 
 3. **Trading Session Management** 
-   - Maintain active trading sessions with proper state management 
-   - Implement session logging and monitoring
+   - Maintain active trading sessions with proper state management ✅
+   - Implement session logging and monitoring ✅
 
 4. **News Integration**
-   - Fetch relevant financial news from multiple sources
-   - Perform sentiment analysis on news articles
-   - Correlate news events with price movements
+   - Fetch relevant financial news from multiple sources ✅
+   - Perform sentiment analysis comments from different users ✅
    - Filter news by relevance and impact level
 
 5. **Risk Management**
@@ -34,6 +33,9 @@ This document outlines the goals, requirements, and functionality of the Python 
 
 2. **Price Prediction System**
    - Implement machine learning models for closing price prediction
+    - LSTM Models
+    - RSI
+    - EMA/MA
    - Use technical indicators as feature inputs
    - Apply best practices for time series forecasting
    - Include confidence intervals and prediction accuracy metrics

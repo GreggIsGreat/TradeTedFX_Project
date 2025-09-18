@@ -425,14 +425,14 @@ def main():
         print(sample_gold)
     
     # Index sample
-    print("\n--- NAS100 (1d) ---")
-    sample_nas = collector.get_latest_data('^NDX', '1d', 3)
+    print("\n--- NAS100 (1h) ---")
+    sample_nas = collector.get_latest_data('^NDX', '1h', 3)
     if not sample_nas.empty:
         print(sample_nas)
     
     # Crypto sample
-    print("\n--- BTCUSD (1d) ---")
-    sample_btc = collector.get_latest_data('BTC-USD', '1d', 3)
+    print("\n--- BTCUSD (1h) ---")
+    sample_btc = collector.get_latest_data('BTC-USD', '1h', 3)
     if not sample_btc.empty:
         print(sample_btc)
 
