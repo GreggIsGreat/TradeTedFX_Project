@@ -1,0 +1,86 @@
+2025-09-18 21:17:39,323 - __main__ - INFO - Database setup completed successfully
+2025-09-18 21:17:39,324 - __main__ - INFO - Starting daily data collection
+2025-09-18 21:17:39,324 - __main__ - INFO - Starting collection for 3 symbols
+2025-09-18 21:17:39,324 - __main__ - INFO - Fetching GC=F data - Attempt 1
+2025-09-18 21:18:21,422 - yfinance - ERROR - Failed to get ticker 'GC=F' reason: HTTPSConnectionPool(host='www.yahoo.com', port=443): Read timed out. (read timeout=30)
+2025-09-18 21:18:38,321 - yfinance - ERROR - $GC=F: possibly delisted; no price data found  (period=60d)
+2025-09-18 21:18:38,323 - __main__ - WARNING - No data received for GC=F
+2025-09-18 21:18:39,326 - __main__ - INFO - Fetching GC=F data - Attempt 1
+2025-09-18 21:18:43,101 - __main__ - ERROR - Attempt 1 failed for GC=F: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:18:48,103 - __main__ - INFO - Fetching GC=F data - Attempt 2
+2025-09-18 21:18:52,182 - __main__ - ERROR - Attempt 2 failed for GC=F: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:18:57,184 - __main__ - INFO - Fetching GC=F data - Attempt 3
+2025-09-18 21:19:00,769 - __main__ - ERROR - Attempt 3 failed for GC=F: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:19:00,769 - __main__ - ERROR - All attempts failed for GC=F
+2025-09-18 21:19:01,770 - __main__ - INFO - Fetching ^NDX data - Attempt 1
+2025-09-18 21:19:05,475 - __main__ - ERROR - Attempt 1 failed for ^NDX: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:19:10,476 - __main__ - INFO - Fetching ^NDX data - Attempt 2
+2025-09-18 21:19:22,249 - __main__ - ERROR - Attempt 2 failed for ^NDX: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:19:27,250 - __main__ - INFO - Fetching ^NDX data - Attempt 3
+2025-09-18 21:19:34,636 - __main__ - ERROR - Attempt 3 failed for ^NDX: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:19:34,636 - __main__ - ERROR - All attempts failed for ^NDX
+2025-09-18 21:19:35,638 - __main__ - INFO - Fetching ^NDX data - Attempt 1
+2025-09-18 21:19:38,696 - __main__ - ERROR - Attempt 1 failed for ^NDX: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:19:43,697 - __main__ - INFO - Fetching ^NDX data - Attempt 2
+2025-09-18 21:19:47,125 - __main__ - ERROR - Attempt 2 failed for ^NDX: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:19:52,127 - __main__ - INFO - Fetching ^NDX data - Attempt 3
+2025-09-18 21:20:05,032 - yfinance - ERROR - $^NDX: possibly delisted; no price data found  (period=60d)
+2025-09-18 21:20:05,035 - __main__ - WARNING - No data received for ^NDX
+2025-09-18 21:20:06,036 - __main__ - INFO - Fetching BTC-USD data - Attempt 1
+2025-09-18 21:20:20,395 - yfinance - ERROR - Failed to get ticker 'BTC-USD' reason: HTTPSConnectionPool(host='query2.finance.yahoo.com', port=443): Read timed out. (read timeout=10)
+2025-09-18 21:20:23,896 - __main__ - ERROR - Attempt 1 failed for BTC-USD: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:20:28,897 - __main__ - INFO - Fetching BTC-USD data - Attempt 2
+2025-09-18 21:20:32,226 - __main__ - ERROR - Attempt 2 failed for BTC-USD: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:20:37,227 - __main__ - INFO - Fetching BTC-USD data - Attempt 3
+2025-09-18 21:20:41,612 - __main__ - ERROR - Attempt 3 failed for BTC-USD: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:20:41,612 - __main__ - ERROR - All attempts failed for BTC-USD
+2025-09-18 21:20:42,614 - __main__ - INFO - Fetching BTC-USD data - Attempt 1
+2025-09-18 21:20:45,669 - __main__ - ERROR - Attempt 1 failed for BTC-USD: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:20:50,671 - __main__ - INFO - Fetching BTC-USD data - Attempt 2
+2025-09-18 21:20:54,047 - __main__ - ERROR - Attempt 2 failed for BTC-USD: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:20:59,048 - __main__ - INFO - Fetching BTC-USD data - Attempt 3
+2025-09-18 21:21:08,629 - __main__ - ERROR - Attempt 3 failed for BTC-USD: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:21:08,629 - __main__ - ERROR - All attempts failed for BTC-USD
+2025-09-18 21:21:09,630 - __main__ - INFO - Collection completed: 0/6 successful
+2025-09-18 21:21:09,752 - __main__ - INFO - Daily collection completed: 0/6 successful
+2025-09-18 22:50:30,823 - __main__ - INFO - Database setup completed successfully
+2025-09-18 22:50:30,824 - __main__ - INFO - Starting daily data collection
+2025-09-18 22:50:30,825 - __main__ - INFO - Starting collection for 3 symbols
+2025-09-18 22:50:30,825 - __main__ - INFO - Fetching GC=F data - Attempt 1
+2025-09-18 22:50:44,870 - __main__ - ERROR - Attempt 1 failed for GC=F: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 22:50:49,871 - __main__ - INFO - Fetching GC=F data - Attempt 2
+2025-09-18 22:50:58,429 - __main__ - ERROR - Attempt 2 failed for GC=F: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 22:51:03,430 - __main__ - INFO - Fetching GC=F data - Attempt 3
+2025-09-18 22:51:13,182 - __main__ - ERROR - Attempt 3 failed for GC=F: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 22:51:13,182 - __main__ - ERROR - All attempts failed for GC=F
+2025-09-18 22:51:14,183 - __main__ - INFO - Fetching GC=F data - Attempt 1
+2025-09-18 22:51:33,916 - __main__ - ERROR - Attempt 1 failed for GC=F: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 22:51:38,917 - __main__ - INFO - Fetching GC=F data - Attempt 2
+2025-09-18 22:51:58,293 - __main__ - ERROR - Attempt 2 failed for GC=F: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 22:52:03,294 - __main__ - INFO - Fetching GC=F data - Attempt 3
+2025-09-18 22:52:17,847 - __main__ - ERROR - Attempt 3 failed for GC=F: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 22:52:17,847 - __main__ - ERROR - All attempts failed for GC=F
+2025-09-18 22:52:18,849 - __main__ - INFO - Fetching ^NDX data - Attempt 1
+2025-09-18 22:52:54,026 - yfinance - ERROR - $^NDX: possibly delisted; no price data found  (period=60d)
+2025-09-18 22:52:54,028 - __main__ - WARNING - No data received for ^NDX
+2025-09-18 22:52:55,029 - __main__ - INFO - Fetching ^NDX data - Attempt 1
+2025-09-18 22:53:16,552 - __main__ - ERROR - Attempt 1 failed for ^NDX: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 22:53:21,553 - __main__ - INFO - Fetching ^NDX data - Attempt 2
+2025-09-18 22:53:50,983 - yfinance - ERROR - $^NDX: possibly delisted; no price data found  (period=60d)
+2025-09-18 22:53:50,986 - __main__ - WARNING - No data received for ^NDX
+2025-09-18 22:53:51,988 - __main__ - INFO - Fetching BTC-USD data - Attempt 1
+2025-09-18 22:54:02,712 - __main__ - ERROR - Attempt 1 failed for BTC-USD: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 22:54:07,715 - __main__ - INFO - Fetching BTC-USD data - Attempt 2
+2025-09-18 22:54:15,216 - __main__ - ERROR - Attempt 2 failed for BTC-USD: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 22:54:20,218 - __main__ - INFO - Fetching BTC-USD data - Attempt 3
+2025-09-18 22:54:25,974 - __main__ - ERROR - Attempt 3 failed for BTC-USD: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 22:54:25,974 - __main__ - ERROR - All attempts failed for BTC-USD
+2025-09-18 22:54:26,976 - __main__ - INFO - Fetching BTC-USD data - Attempt 1
+2025-09-18 22:54:33,949 - __main__ - ERROR - Attempt 1 failed for BTC-USD: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 22:54:38,950 - __main__ - INFO - Fetching BTC-USD data - Attempt 2
+2025-09-18 22:54:46,121 - __main__ - ERROR - Attempt 2 failed for BTC-USD: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 22:54:51,121 - __main__ - INFO - Fetching BTC-USD data - Attempt 3
+2025-09-18 22:54:57,991 - __main__ - ERROR - Attempt 3 failed for BTC-USD: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 22:54:57,991 - __main__ - ERROR - All attempts failed for BTC-USD
+2025-09-18 22:54:58,992 - __main__ - INFO - Collection completed: 0/6 successful
+2025-09-18 22:54:59,127 - __main__ - INFO - Daily collection completed: 0/6 successful
