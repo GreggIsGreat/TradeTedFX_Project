@@ -558,3 +558,175 @@
 2025-09-18 10:13:45,632 - __main__ - INFO - Fetched 0 valid news articles for BTC-USD
 2025-09-18 10:13:45,632 - __main__ - WARNING - No discussion URL configured for BTCUSD
 2025-09-18 10:13:45,632 - __main__ - INFO - News integration completed
+2025-09-18 20:58:59,681 - __main__ - INFO - Database setup completed successfully
+2025-09-18 20:59:04,043 - __main__ - INFO - Starting news integration
+2025-09-18 20:59:04,043 - __main__ - INFO - Fetching economic calendar from 15/09/2025 to 18/09/2025
+2025-09-18 20:59:19,384 - __main__ - INFO - Fetched 36 economic events
+2025-09-18 20:59:19,412 - __main__ - INFO - Stored 36 economic events
+2025-09-18 20:59:19,413 - __main__ - INFO - Processing GOLD (GC=F)
+2025-09-18 20:59:28,809 - __main__ - ERROR - Failed to fetch news for GC=F: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-09-18 20:59:34,652 - __main__ - INFO - Fetched 27 comments for GOLD
+2025-09-18 20:59:34,853 - __main__ - INFO - Stored 27 discussion comments for GOLD
+2025-09-18 20:59:34,858 - __main__ - ERROR - Failed to summarize comments: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\Thabang Teddy/nltk_data'
+    - 'C:\\Users\\Thabang Teddy\\AppData\\Local\\Programs\\Python\\Python312\\nltk_data'
+    - 'C:\\Users\\Thabang Teddy\\AppData\\Local\\Programs\\Python\\Python312\\share\\nltk_data'
+    - 'C:\\Users\\Thabang Teddy\\AppData\\Local\\Programs\\Python\\Python312\\lib\\nltk_data'
+    - 'C:\\Users\\Thabang Teddy\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-09-18 20:59:34,882 - __main__ - INFO - Stored market analysis for GOLD
+2025-09-18 20:59:34,883 - __main__ - INFO - Summary for GOLD: Error generating summary.
+2025-09-18 20:59:34,883 - __main__ - INFO - Analysis for GOLD: Buy: 5, Sell: 8, Recommendation: Sell, Sentiment: Positive (0.1748)
+2025-09-18 20:59:34,883 - __main__ - INFO - Processing NAS100 (^NDX)
+2025-09-18 20:59:39,742 - __main__ - ERROR - Failed to fetch news for ^NDX: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 20:59:43,208 - __main__ - ERROR - Failed to fetch comments for NAS100: ('Connection broken: IncompleteRead(6961 bytes read, 3279 more expected)', IncompleteRead(6961 bytes read, 3279 more expected))
+2025-09-18 20:59:43,208 - __main__ - INFO - Processing BTCUSD (BTC-USD)
+2025-09-18 20:59:48,290 - __main__ - ERROR - Failed to fetch news for BTC-USD: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 20:59:48,291 - __main__ - WARNING - No discussion URL configured for BTCUSD
+2025-09-18 20:59:48,293 - __main__ - INFO - News integration completed
+2025-09-18 21:16:22,007 - __main__ - INFO - Database setup completed successfully
+2025-09-18 21:16:22,319 - __main__ - INFO - Starting news integration
+2025-09-18 21:16:22,323 - __main__ - INFO - Fetching economic calendar from 15/09/2025 to 18/09/2025
+2025-09-18 21:16:28,295 - __main__ - INFO - Fetched 36 economic events
+2025-09-18 21:16:28,339 - __main__ - INFO - Stored 36 economic events
+2025-09-18 21:16:28,340 - __main__ - INFO - Processing GOLD (GC=F)
+2025-09-18 21:16:34,533 - __main__ - ERROR - Failed to fetch news for GC=F: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:16:36,487 - __main__ - ERROR - Failed to fetch comments for GOLD: ('Connection broken: IncompleteRead(4101 bytes read, 3854 more expected)', IncompleteRead(4101 bytes read, 3854 more expected))
+2025-09-18 21:16:36,487 - __main__ - INFO - Processing NAS100 (^NDX)
+2025-09-18 21:16:53,249 - __main__ - ERROR - Failed to fetch news for ^NDX: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:16:56,187 - __main__ - INFO - Fetched 37 comments for NAS100
+2025-09-18 21:16:56,643 - __main__ - INFO - Stored 37 discussion comments for NAS100
+2025-09-18 21:16:56,648 - __main__ - ERROR - Failed to summarize comments: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\Thabang Teddy/nltk_data'
+    - 'C:\\Users\\Thabang Teddy\\AppData\\Local\\Programs\\Python\\Python312\\nltk_data'
+    - 'C:\\Users\\Thabang Teddy\\AppData\\Local\\Programs\\Python\\Python312\\share\\nltk_data'
+    - 'C:\\Users\\Thabang Teddy\\AppData\\Local\\Programs\\Python\\Python312\\lib\\nltk_data'
+    - 'C:\\Users\\Thabang Teddy\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-09-18 21:16:56,682 - __main__ - INFO - Stored market analysis for NAS100
+2025-09-18 21:16:56,684 - __main__ - INFO - Summary for NAS100: Error generating summary.
+2025-09-18 21:16:56,684 - __main__ - INFO - Analysis for NAS100: Buy: 18, Sell: 12, Recommendation: Neutral, Sentiment: Positive (0.0719)
+2025-09-18 21:16:56,685 - __main__ - INFO - Processing BTCUSD (BTC-USD)
+2025-09-18 21:17:06,539 - __main__ - ERROR - Failed to fetch news for BTC-USD: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:17:06,541 - __main__ - WARNING - No discussion URL configured for BTCUSD
+2025-09-18 21:17:06,541 - __main__ - INFO - News integration completed
+2025-09-18 21:20:08,104 - __main__ - INFO - Database setup completed successfully
+2025-09-18 21:20:08,214 - __main__ - INFO - Starting news integration
+2025-09-18 21:20:08,215 - __main__ - INFO - Fetching economic calendar from 15/09/2025 to 18/09/2025
+2025-09-18 21:20:11,492 - __main__ - INFO - Fetched 36 economic events
+2025-09-18 21:20:11,525 - __main__ - INFO - Stored 36 economic events
+2025-09-18 21:20:11,526 - __main__ - INFO - Processing GOLD (GC=F)
+2025-09-18 21:20:16,165 - __main__ - ERROR - Failed to fetch news for GC=F: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:20:18,794 - __main__ - ERROR - Failed to fetch comments for GOLD: ('Connection broken: IncompleteRead(1363 bytes read, 8877 more expected)', IncompleteRead(1363 bytes read, 8877 more expected))
+2025-09-18 21:20:18,795 - __main__ - INFO - Processing NAS100 (^NDX)
+2025-09-18 21:20:22,055 - __main__ - ERROR - Failed to fetch news for ^NDX: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:20:24,885 - __main__ - INFO - Fetched 38 comments for NAS100
+2025-09-18 21:20:25,045 - __main__ - INFO - Stored 38 discussion comments for NAS100
+2025-09-18 21:20:25,196 - __main__ - INFO - Stored market analysis for NAS100
+2025-09-18 21:20:25,197 - __main__ - INFO - Summary for NAS100: somehow the govt needs to help companies hide 5years of Enron accounting. They have to allow companies to skip a year of disclosing earnings so the Enron can be cleaned up without knvestors knowing how close we are to the Chinese stonk market. there's a reason trump is fighting so hard to let companies no longer report earning.
+2025-09-18 21:20:25,198 - __main__ - INFO - Analysis for NAS100: Buy: 18, Sell: 10, Recommendation: Buy, Sentiment: Positive (0.0727)
+2025-09-18 21:20:25,198 - __main__ - INFO - Processing BTCUSD (BTC-USD)
+2025-09-18 21:20:28,073 - __main__ - ERROR - Failed to fetch news for BTC-USD: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 21:20:28,073 - __main__ - WARNING - No discussion URL configured for BTCUSD
+2025-09-18 21:20:28,073 - __main__ - INFO - News integration completed
+2025-09-18 22:52:12,041 - __main__ - INFO - Database setup completed successfully
+2025-09-18 22:52:12,259 - __main__ - INFO - Starting news integration
+2025-09-18 22:52:12,259 - __main__ - INFO - Fetching economic calendar from 15/09/2025 to 18/09/2025
+2025-09-18 22:52:15,196 - __main__ - INFO - Fetched 36 economic events
+2025-09-18 22:52:15,590 - __main__ - INFO - Stored 36 economic events
+2025-09-18 22:52:15,592 - __main__ - INFO - Processing GOLD (GC=F)
+2025-09-18 22:52:32,703 - __main__ - ERROR - Failed to fetch news for GC=F: Too Many Requests. Rate limited. Try after a while.
+2025-09-18 22:52:39,876 - __main__ - INFO - Fetched 32 comments for GOLD
+2025-09-18 22:52:40,089 - __main__ - INFO - Stored 32 discussion comments for GOLD
+2025-09-18 22:52:40,184 - __main__ - INFO - Stored market analysis for GOLD
+2025-09-18 22:52:40,188 - __main__ - INFO - Summary for GOLD: Is there anything better than BITCOIN? YES MORE BITCOIN! Is there anything better than gold?
+2025-09-18 22:52:40,189 - __main__ - INFO - Analysis for GOLD: Buy: 6, Sell: 7, Recommendation: Neutral, Sentiment: Positive (0.2031)
+2025-09-18 22:52:40,191 - __main__ - INFO - Processing NAS100 (^NDX)
+2025-09-18 22:53:16,186 - __main__ - ERROR - Failed to fetch news for ^NDX: HTTPSConnectionPool(host='www.yahoo.com', port=443): Read timed out. (read timeout=30)
+2025-09-18 22:53:20,427 - __main__ - INFO - Fetched 33 comments for NAS100
+2025-09-18 22:53:20,456 - __main__ - INFO - Stored 33 discussion comments for NAS100
+2025-09-18 22:53:20,487 - __main__ - INFO - Stored market analysis for NAS100
+2025-09-18 22:53:20,487 - __main__ - INFO - Summary for NAS100: I dont think we topped yet. still way to go up. but correction is near.
+2025-09-18 22:53:20,487 - __main__ - INFO - Analysis for NAS100: Buy: 12, Sell: 3, Recommendation: Buy, Sentiment: Positive (0.0894)
+2025-09-18 22:53:20,489 - __main__ - INFO - Processing BTCUSD (BTC-USD)
+2025-09-18 22:53:39,896 - __main__ - ERROR - Failed to fetch news for BTC-USD: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-09-18 22:53:39,897 - __main__ - WARNING - No discussion URL configured for BTCUSD
+2025-09-18 22:53:39,900 - __main__ - INFO - News integration completed
+2025-09-19 07:33:32,896 - __main__ - INFO - Database setup completed successfully
+2025-09-19 07:33:33,436 - __main__ - INFO - Starting news integration
+2025-09-19 07:33:33,440 - __main__ - INFO - Fetching economic calendar from 16/09/2025 to 19/09/2025
+2025-09-19 07:33:38,099 - __main__ - INFO - Fetched 42 economic events
+2025-09-19 07:33:38,165 - __main__ - INFO - Stored 42 economic events
+2025-09-19 07:33:38,168 - __main__ - INFO - Processing GOLD (GC=F)
+2025-09-19 07:34:02,707 - __main__ - ERROR - Failed to fetch news for GC=F: Too Many Requests. Rate limited. Try after a while.
+2025-09-19 07:34:06,171 - __main__ - INFO - Fetched 36 comments for GOLD
+2025-09-19 07:34:06,507 - __main__ - INFO - Stored 36 discussion comments for GOLD
+2025-09-19 07:34:06,635 - __main__ - INFO - Stored market analysis for GOLD
+2025-09-19 07:34:06,635 - __main__ - INFO - Summary for GOLD: salegold target 3000 buy nifty target 2800 sale gold target 3000 buy nifty target 2800 Buy now Tp 3880 then up 4000 3.706-3.693-3.662 Pivot point atm... Buy now Tp 3880 Its a sell until Monday watch Its a sell until Monday watch Its a sell until Monday watch Well well well it’s going to drop i dnt care what anyone says! Well well well it’s going to drop I don’t care what anyone says! Buy now Tp 3725 then 3880 sale gold target 3000 intraday sell gold 109400 stop loss 109850 tgt 108400 - 107400 Short 3688 -2 pizzas Up we Gosies!
+2025-09-19 07:34:06,638 - __main__ - INFO - Analysis for GOLD: Buy: 9, Sell: 11, Recommendation: Neutral, Sentiment: Positive (0.1158)
+2025-09-19 07:34:06,638 - __main__ - INFO - Processing NAS100 (^NDX)
+2025-09-19 07:34:18,014 - __main__ - ERROR - Failed to fetch news for ^NDX: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-09-19 07:34:22,675 - __main__ - INFO - Fetched 37 comments for NAS100
+2025-09-19 07:34:22,788 - __main__ - INFO - Stored 37 discussion comments for NAS100
+2025-09-19 07:34:22,884 - __main__ - INFO - Stored market analysis for NAS100
+2025-09-19 07:34:22,885 - __main__ - INFO - Summary for NAS100: Why is this not going down , algo pump? 13rh green day this should be red for several days. Top is at 28k Did you see what happened in the Japanese index today?
+2025-09-19 07:34:22,887 - __main__ - INFO - Analysis for NAS100: Buy: 10, Sell: 8, Recommendation: Neutral, Sentiment: Neutral (0.0002)
+2025-09-19 07:34:22,889 - __main__ - INFO - Processing BTCUSD (BTC-USD)
+2025-09-19 07:34:42,270 - __main__ - ERROR - Failed to fetch news for BTC-USD: Too Many Requests. Rate limited. Try after a while.
+2025-09-19 07:34:42,273 - __main__ - WARNING - No discussion URL configured for BTCUSD
+2025-09-19 07:34:42,274 - __main__ - INFO - News integration completed
+2025-09-19 07:59:32,952 - __main__ - INFO - Database setup completed successfully
+2025-09-19 07:59:33,208 - __main__ - INFO - Starting news integration
+2025-09-19 07:59:33,209 - __main__ - INFO - Fetching economic calendar from 16/09/2025 to 19/09/2025
+2025-09-19 07:59:36,108 - __main__ - INFO - Fetched 42 economic events
+2025-09-19 07:59:36,142 - __main__ - INFO - Stored 42 economic events
+2025-09-19 07:59:36,143 - __main__ - INFO - Processing GOLD (GC=F)
+2025-09-19 07:59:57,185 - __main__ - ERROR - Failed to fetch news for GC=F: Too Many Requests. Rate limited. Try after a while.
+2025-09-19 07:59:59,535 - __main__ - INFO - Fetched 36 comments for GOLD
+2025-09-19 07:59:59,742 - __main__ - INFO - Stored 36 discussion comments for GOLD
+2025-09-19 07:59:59,835 - __main__ - INFO - Stored market analysis for GOLD
+2025-09-19 07:59:59,836 - __main__ - INFO - Summary for GOLD: salegold target 3000 buy nifty target 2800 sale gold target 3000 buy nifty target 2800 Buy now Tp 3880 then up 4000 3.706-3.693-3.662 Pivot point atm... Buy now Tp 3880 Its a sell until Monday watch Its a sell until Monday watch Its a sell until Monday watch Well well well it’s going to drop i dnt care what anyone says! Well well well it’s going to drop I don’t care what anyone says! Buy now Tp 3725 then 3880 sale gold target 3000 intraday sell gold 109400 stop loss 109850 tgt 108400 - 107400 Short 3688 -2 pizzas Up we Gosies!
+2025-09-19 07:59:59,837 - __main__ - INFO - Analysis for GOLD: Buy: 9, Sell: 11, Recommendation: Neutral, Sentiment: Positive (0.1158)
+2025-09-19 07:59:59,838 - __main__ - INFO - Processing NAS100 (^NDX)
+2025-09-19 08:00:07,656 - __main__ - ERROR - Failed to fetch news for ^NDX: Too Many Requests. Rate limited. Try after a while.
+2025-09-19 08:00:11,637 - __main__ - INFO - Fetched 31 comments for NAS100
+2025-09-19 08:00:11,698 - __main__ - INFO - Stored 31 discussion comments for NAS100
+2025-09-19 08:00:11,735 - __main__ - INFO - Stored market analysis for NAS100
+2025-09-19 08:00:11,735 - __main__ - INFO - Summary for NAS100: escape from us markets! some buy dipper try to save that but it’s to late hahaha Why is this not going down , algo pump? 13rh green day this should be red for several days.
+2025-09-19 08:00:11,737 - __main__ - INFO - Analysis for NAS100: Buy: 10, Sell: 7, Recommendation: Neutral, Sentiment: Neutral (0.0385)
+2025-09-19 08:00:11,738 - __main__ - INFO - Processing BTCUSD (BTC-USD)
+2025-09-19 08:00:20,524 - __main__ - ERROR - Failed to fetch news for BTC-USD: Too Many Requests. Rate limited. Try after a while.
+2025-09-19 08:00:20,525 - __main__ - WARNING - No discussion URL configured for BTCUSD
+2025-09-19 08:00:20,526 - __main__ - INFO - News integration completed

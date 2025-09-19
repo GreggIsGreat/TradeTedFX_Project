@@ -12,6 +12,8 @@ from bs4 import BeautifulSoup
 import nltk
 from nltk.tokenize import sent_tokenize
 
+# nltk.download(['punkt', 'wordnet', 'stopwords', 'averaged_perceptron_tagger', 'vader_lexicon', 'punkt_tab'])
+
 class NewsIntegrator:
     """
     Integrates financial news and economic events for trading analysis
